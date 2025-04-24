@@ -19,9 +19,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-twitter_username: username
+twitter_username: BENJAMINMOSEA
 github_username: ludwekin
-minimal_mistakes_skin: default
+minimal_mistakes_skin: sunrise
 search: true
 
 # Build settings
@@ -62,9 +62,9 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
+    - label: "Xiaohongshu"
+      icon: "fas fa-fw fa-star"
+      url: "https://www.xiaohongshu.com/user/BENJAMINMO"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/BENJAMINMOSEA"
@@ -79,13 +79,13 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/BENJAMINMOSEA"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/ludwekin"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://instagram.com/moseabenjamin"
 
 defaults:
   # _posts
