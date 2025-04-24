@@ -59,12 +59,12 @@ plugins:
 
 author:
   name   : "Ethan Benjamin"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/avatar.jpeg"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
-    - label: "Xiaohongshu"
-      icon: "fas fa-fw fa-star"
-      url: "https://www.xiaohongshu.com/user/BENJAMINMO"
+    #- label: "Website"
+    #  icon: "fas fa-fw fa-star"
+    #  url: "https://"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/BENJAMINMOSEA"
