@@ -11,7 +11,7 @@ tags:
 
 这是我搭建的第一个博客网站，记录一下我的过程和想法，也算是对未来更新的一个起点。
 
-这个博客是用 [mm-github-pages-starter](https://github.com/mmistakes/mm-github-pages-starter) 搭建的，这是一个基于 Jekyll 的 GitHub Pages 模板，非常适合初学者快速入门。你只需要点击模板右上角的 “Use this template” 或 “一键部署”，就可以复制整个项目并立即上线，非常方便。搭建只需1分钟。
+这个博客是用 [mm-github-pages-starter](https://github.com/mmistakes/mm-github-pages-starter) 搭建的，这是一个基于 Jekyll 的 GitHub Pages 模板，非常适合初学者快速入门。你只需要点击模板右上角的 “Use this template” ，就可以复制整个项目并立即上线，非常方便。搭建只需1分钟。
 
 为什么我选择了 GitHub 来托管博客？原因很简单：免费稳定。之前我是注册了aws的ec2服务器，但是那个只能免费1年。
 
