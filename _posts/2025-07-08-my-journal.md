@@ -4,7 +4,7 @@ categories:
   - Blog
 tags:
   - Chat
-author;
+author:
   - Ethan Benjamin
 ---
 
