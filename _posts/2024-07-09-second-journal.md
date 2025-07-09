@@ -15,17 +15,6 @@ tags:
 
 ## 🛠 搭建过程简要分享
 
-这个博客是基于 [mmistakes/mm-github-pages-starter](https://github.com/mmistakes/mm-github-pages-starter) 搭建的，这是一个基于 Jekyll 的 GitHub Pages 模板，非常适合初学者快速入门。你只需要点击模板右上角的 “Use this template” 或 “一键部署”，就可以复制整个项目并立即上线，非常方便！
-
-为什么我选择了 GitHub 来托管博客？原因很简单：
-
-- 免费！不用租服务器
-- 稳定！GitHub 是全球最大的开源平台
-- 长期保存！比刻在石头上还久远（笑）
-
-整个过程我没有本地运行 Jekyll 构建，而是直接 fork 项目、写 Markdown 文件、push 到仓库，然后 GitHub Pages 自动构建发布。省去了很多复杂配置。
-
-
 
 ## 🎨 网站风格
 
