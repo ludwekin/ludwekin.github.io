@@ -59,8 +59,8 @@ plugins:
 
 author:
   name   : "Ethan Benjamin"
-  avatar : "/assets/images/avatar.jpg"
-  logo: "/assets/images/avatar.jpg"
+  avatar : "/assets/images/avatar.jpeg"
+  logo: "/assets/images/avatar.jpeg"
 
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
