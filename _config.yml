@@ -97,7 +97,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true
       share: false    #开启后页面底部可以快速分享到社交媒体。
       related: true
