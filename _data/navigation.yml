@@ -5,8 +5,8 @@ main:
   #  url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "About"
-    url: /about/
-  - title: "Resume"
-    url: /assets/resumes/王逸飞简历.pdf    
+  #- title: "About"
+  #  url: /about/
+  # - title: "Resume"
+  #  url: /assets/resumes/王逸飞简历.pdf    
     
