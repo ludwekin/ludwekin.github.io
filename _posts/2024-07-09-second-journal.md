@@ -19,7 +19,26 @@ tags:
   <img src="/assets/images/notion.png" alt="描述文字">
 </figure>
 
-assets/images/notion.png
+## 测试小图模式
+[![描述文字](/assets/images/2025/08/08/my-photo-small.jpg){: .align-center}]
+(/assets/images/notion.png)
+
+## 测试figure方法的style参数指定
+<figure class="align-center">
+  <img src="/assets/images/notion.png" alt="描述文字"  style="max-width:400px;" >
+</figure>
+
+
+
+
+## 测试figure方法的half和site.url超参
+<figure class="align-center half">
+  <a href="{{ site.url }}/assets/images/notion.png">
+    <img src="{{ site.url }}/assets/images/notion.png" alt="" />
+  </a>
+</figure>
+
+
 
 ## 🎨 网站风格
 
