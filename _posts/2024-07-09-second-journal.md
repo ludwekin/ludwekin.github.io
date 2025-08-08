@@ -13,8 +13,13 @@ tags:
 
 
 
-## 🛠 搭建过程简要分享
+## 🛠 测试图片功能
 
+<figure class="align-center">
+  <img src="/assets/images/notion.png" alt="描述文字">
+</figure>
+
+assets/images/notion.png
 
 ## 🎨 网站风格
 
