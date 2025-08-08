@@ -40,6 +40,10 @@ tags:
 
 
 
+## 测试居中（markdown格式）
+![描述文字](/assets/images/notion.png){: .align-center .half}
+
+
 ## 🎨 网站风格
 
 我使用的是 mmistakes 的主题风格（有很多种预设），没有做任何前端设计上的改动。这个模板本身就是一个经过精心打磨的个性化博客主题，只需要关注 Markdown 内容创作就可以了。对于我这种更关注写作的人来说非常合适。
