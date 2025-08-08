@@ -20,7 +20,7 @@ tags:
 </figure>
 
 ## 测试小图模式
-[![描述文字](/assets/images/2025/08/08/my-photo-small.jpg){: .align-center}]
+[![描述文字](/assets/images/notion.png){: .align-center}]
 (/assets/images/notion.png)
 
 ## 测试figure方法的style参数指定
