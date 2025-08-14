@@ -1,9 +1,6 @@
 ---
 title: "决定写点什么"
-categories:
-  - Blog
-tags:
-  - Chat
+
 
 ---
 
