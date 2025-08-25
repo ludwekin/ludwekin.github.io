@@ -25,7 +25,7 @@ title: "whell/leg"
 
     `[GitHub](https://github.com "访问 GitHub")`
 7. 安装了Zotero。
-8. freertos谁提出的？
+8. FreeRTOS谁提出的？
 
     FreeRTOS 是一个 轻量级开源实时操作系统内核，专为微控制器设计，支持多任务调度、信号量、队列等功能。 作者：Richard Barry（理查德·巴里）。
 

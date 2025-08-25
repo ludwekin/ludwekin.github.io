@@ -1,5 +1,5 @@
 ---
-title: "personal essay"
+title: "reconfigured"
 ---
 
 1. 焊锡丝买的时候也有讲究，锡含量，还有是否有助焊剂内芯（基本都有，不然锡氧化太快了）。
