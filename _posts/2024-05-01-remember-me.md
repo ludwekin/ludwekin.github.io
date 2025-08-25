@@ -1,0 +1,38 @@
+---
+title: "whell/leg"
+
+---
+
+
+
+1. 怎么在vs code里面打开bash？
+
+    搜到了，就是打开终端，然后可以选的。Windows系统默认是打开为Powershell。
+2. 闭链五连杆并联结构。
+3. 国际机器人会议（ICRA、IROS），这是什么？能搜到论文吗？
+
+    - ICRA (International Conference on Robotics and Automation)，创办于 1984 年，是机器人领域最顶级的学术会议之一。
+    - IROS (International Conference on Intelligent Robots and Systems)，创办于 1988 年，和 ICRA 并列为机器人领域的“双顶会”。
+4. 在IEEE Xplore里面可以找到上面两个顶会的论文。不过要付费哈哈。但是很多作者会把论文同时上传到 arXiv，那这样的话可以免费下载一些。
+5. git记录可以强制清零。也很简单，删了.git文件后当新仓库处理，最后强制推送到远端：
+
+    `git push -f origin main`
+
+    有时候commit的消息写错字了，想改会很麻烦，我就会选择清.git文件。
+6. mmistakes怎么用markdown语法写超链接来着？
+
+    嗷嗷就是如下代码。以跳转到 Github 举例了。 
+
+    `[GitHub](https://github.com "访问 GitHub")`
+7. 安装了Zotero。
+8. freertos谁提出的？
+
+    FreeRTOS 是一个 轻量级开源实时操作系统内核，专为微控制器设计，支持多任务调度、信号量、队列等功能。 作者：Richard Barry（理查德·巴里）。
+
+    Richard Barry， 他现在怎么样了？创新出 FreeRTOS 可不是一般的成就吧。搜到了。FreeRTOS 的管理移交给了 Amazon Web Services (AWS)，Barry 也加入 AWS，继续推动该项目。
+9. SBUS（Serial BUS） 是 Futaba 公司最早提出的一种 单线串行通信协议，主要用于 遥控器和接收机之间的数据传输。这个协议把多个通道（一般 16 个以上）的 PWM 信号 打包成串行数据帧，通过 单根信号线 传输给飞控或伺服。
+10. 怎么在stm32fxxxxxxx的数据手册上找到，电源供电方面的说明？比如我看视频都要并联一个电容来着。
+
+    我看了数据手册，但是没找到相关的说明，后面发现了这个要在硬件设计指南上面找。
+11. usb接口的d+和d-连到stm32，要加电阻的。作用是阻抗匹配，减少反射和 EMI。
+
