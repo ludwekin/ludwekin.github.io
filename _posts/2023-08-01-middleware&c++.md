@@ -1,7 +1,13 @@
 ---
-title : "middleware&c++"
+title : "嵌入式中间件编程：middleware&c++"
 
 ---
+
+## 此文笔记丢失，未及时同步
+
+---
+
+## 常见问题答疑
 
 1. 嵌入式中间件是什么？
 
@@ -12,7 +18,5 @@ title : "middleware&c++"
 
     - AUTOSAR 主要分两个版本，一个是 Classic Platform（CP），一个是 Adaptive Platform（AP）。
     - Adaptive Platform（AP）面向高性能处理器和智能汽车功能（如自动驾驶、车联网）。
-3. c++的简述/发展史。
 
-    - C++ 是由 Bjarne Stroustrup 在 1980 年代初在贝尔实验室发明的。
 
