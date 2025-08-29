@@ -1,7 +1,9 @@
 ---
-title: "自制飞控pcb，项目经验总结"
+title: "自制飞控（autopilot）pcb，运行px4,项目经验总结"
 
 ---
+
+## 通用知识点汇总
 
 1. 飞控芯片选用F4还是F7呢？F743（商用飞控最经典芯片型号）基本一直缺货。F7其他型号的也是经常缺货。
 2. 飞控主板上给 gyro等等供电肯定要 一个转成3.3V的电压转换器。先选择 NCP 1117 3.3V regulator 吧。然后 IMU 选 MPU6000 就行。然后得有个 USB 接口，方便和电脑 通信。其他 电阻什么的，最好0402尺寸的，不然PCB板子会太大了。
@@ -29,4 +31,16 @@ title: "自制飞控pcb，项目经验总结"
     - JST：一家日本连接器厂商（Japan Solderless Terminal）。
     - GH 系列：JST 出品的一类小型连接器系列。
     - 4 Pin JST-GH：指 GH 系列里的 4 芯（4 针脚）连接器。
-12. 
+
+
+---
+
+## 项目经验
+
+1. The following basic concepts should be kept in mind when designing drone cabling:
+
+    - High-Power and signal cables should be separated as much as is practical.
+    - Cable lengths should be the minimum needed to enable easy handling of wired components. The wire tension should be adequate to survive possible airframe deformations even in a crash landing (wires must not be the first thing to break).
+    - Cable loops to reduce excess length should be avoided - use shorter lengths!
+    - For digital signals you can decrease the baudrate to reduce radiated energy and increase the robustness of data transfer. This means that you may be able to use longer cables when high data rates are not needed.
+2. GPS receivers and magnetometers are generally very sensitive to EMI. Therefore these should be mounted far away from RF sources (high-power cabling, ESCs, radio modems and its antenna). This may be insufficient if the cabling is badly designed.

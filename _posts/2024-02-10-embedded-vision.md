@@ -25,11 +25,31 @@ title : "嵌入式设备,部署视觉模型来实现目标追踪"
 ---
 
 
-##
+## SIMD 简介
+
+1. SIMD = Single Instruction, Multiple Data.
+2. 基本思想：一条指令可以同时处理一组数据（向量运算）。
+
+
 
 ---
 
 
-##
+## ESP32-S3 支持 SIMD 吗？
+
+1. ESP32-S3 芯片里有一个 向量扩展 (Vector Extensions)，它支持 单指令多数据 (SIMD)，并且专门为 AI / DSP 加速 做了优化。  
+2. 怎么调用？
+    - 可以通过 ESP-DSP 库 或 ESP-NN 库 来调用这些 SIMD 指令。
+        - [ESP-DSP](https://github.com/espressif/esp-dsp) 提供 FFT、卷积、矩阵乘法的 API。  
+        - [ESP-NN](https://github.com/espressif/esp-nn) 提供 int8 神经网络推理的加速。
+
+
+
+
+
+
+
+
+
 
 ---
