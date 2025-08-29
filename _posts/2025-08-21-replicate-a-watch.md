@@ -1,19 +1,28 @@
 ---
-title : "watch"
+title : "正在复刻Sahko的手环设计，经验分享"
 
 ---
 
-1. 看到了一个 [watch design](https://www.youtube.com/watch?v=dBEupkQBFis) ，还算很帅的。Illustrated below. 有空可以试着复刻一下。
+
+
+
+**Primary Notice:** 此文未完，项目仍在初期。 [Praesent libero](#). Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+{: .notice--primary}
+
+
+## Reproduce an open-source electronics watch
+
+1. 看到了一个 [watch design](https://www.youtube.com/watch?v=dBEupkQBFis) ，还算很帅的。Illustrated below. 有空想试着复刻一下。
 
 ![image-center](/assets/images/watch.png){: .align-center}
 2. 项目主控采用了 stm32u083kcu6 芯片。供电采用了 软包锂电池（聚合物电池）。
-3. 锂电池参数上一般都会标明 C值，C值 是电池工程领域的通用约定，用来描述电池放电速率。
-4. 锂电池也细分很多种的，放电能力都不同。放电能力取决于很多因素，有电池内阻，有材料等等。
-5. 锂电池充电也是有讲究的，一般要分三个阶段来对锂电池充电。
 
-    - 预充阶段：电池电压＜2.9V时，以设定电流 1/10 充电，避免大电流损坏电池。
-    - 恒流阶段：电压≥2.9V 时，以设定的电流进行充电，直至电压接近 4.2V。
-    - 恒压阶段：电压达 4.2V 时，电压不变电流渐降，直至电流降至设定值 1/10，确保满电不过充。
+
+
+
+
+
+
 6. Type-C 协议/接口。绕不过去的Type-C 协议。
 
     - 因为这个 Type-C 接口/协议很通用，所以值得研究一下。
