@@ -18,5 +18,6 @@ title : "嵌入式中间件编程：middleware&c++"
 
     - AUTOSAR 主要分两个版本，一个是 Classic Platform（CP），一个是 Adaptive Platform（AP）。
     - Adaptive Platform（AP）面向高性能处理器和智能汽车功能（如自动驾驶、车联网）。
+3. 在 STM32CubeMX 中，配置 FreeRTOS的方式就是 通过中间件的添加的形式（middleware and software packages）。 
 
 

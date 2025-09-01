@@ -44,3 +44,32 @@ title: "自制飞控（autopilot）pcb，运行px4,项目经验总结"
     - Cable loops to reduce excess length should be avoided - use shorter lengths!
     - For digital signals you can decrease the baudrate to reduce radiated energy and increase the robustness of data transfer. This means that you may be able to use longer cables when high data rates are not needed.
 2. GPS receivers and magnetometers are generally very sensitive to EMI. Therefore these should be mounted far away from RF sources (high-power cabling, ESCs, radio modems and its antenna). This may be insufficient if the cabling is badly designed.
+
+---
+
+## 飞控程序
+
+1. 无人机飞控程序组成：
+    - 传感器数据处理
+        - 加速度计
+        - gyro
+        - 气压计
+        - GPS 
+        - 光流传感器
+        - 超声波传感器
+        - 激光雷达
+        - 摄像头
+    - 数据处理
+        - 去零漂移
+        - 去温漂移
+        - 卡尔曼滤波
+    - 状态估计
+    - 姿态计算
+    - 地面站通信
+    - 多重 PID 算法
+    - 电机控制
+    - 电源检/监测
+    - 安全保护
+    - 日志系统
+2.  所以无人机飞控程序绝对不是 在mcu内用while编程 实现的。这样每个模块都耦合在一起，怎么维护？所以有没有调度办法，而且可以实现解耦呢？有的，那就是 RTOS。
+3. 全世界使用量预估最大的 RTOS，应该就是 FreeRTOS。
