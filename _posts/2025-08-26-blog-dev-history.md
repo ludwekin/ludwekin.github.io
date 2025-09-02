@@ -1,6 +1,6 @@
 ---
 
-title : "此博客发展历史/过程"
+title : "History of This Blog"
 
 ---
 
@@ -61,10 +61,7 @@ title : "此博客发展历史/过程"
 -->
 
 
----
-title : "History of This Blog"
 
----
 
 ## Development Journey
 

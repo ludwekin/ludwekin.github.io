@@ -1,6 +1,7 @@
 ---
 
-title : ""
+title : "Humanoid Robot Bubble"
+
 published: false
 
 ---
