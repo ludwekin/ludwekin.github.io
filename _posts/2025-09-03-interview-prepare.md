@@ -1,6 +1,6 @@
 ---
 
-title : ""
+title : "no post!"
 
 published : false
 

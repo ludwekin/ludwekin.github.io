@@ -2,6 +2,8 @@
 
 title : "Mini Reflow Hot Plate"
 
+published : false
+
 ---
 
 ## Goal

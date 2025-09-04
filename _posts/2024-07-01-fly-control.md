@@ -1,6 +1,8 @@
 ---
+
 title: "自制飞控（autopilot）pcb，运行px4,项目经验总结"
 
+published : true
 ---
 
 

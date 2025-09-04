@@ -2,6 +2,8 @@
 
 title : "History of This Blog"
 
+published : true
+
 ---
 
 <!--  

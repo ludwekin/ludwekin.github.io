@@ -1,6 +1,7 @@
 ---
 
 title : "database design real solution summary"
+
 published : false
 ---
 

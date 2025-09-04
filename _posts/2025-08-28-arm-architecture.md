@@ -63,4 +63,3 @@ title : "ARM Architecture Development History"
 
 ---
 
-### Why 

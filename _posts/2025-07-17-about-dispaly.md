@@ -2,6 +2,8 @@
 
 title : "嵌入式设备/电子设备屏幕选择，相关笔记分享"
 
+published : false
+
 ---
 
 1. 什么是 TFT 屏幕？  

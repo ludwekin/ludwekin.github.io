@@ -1,6 +1,8 @@
 ---
 title : "计算机图形学，相关知识点及个人理解"
 
+published : false
+
 ---
 
 1. Order Independent Transparency 是什么？

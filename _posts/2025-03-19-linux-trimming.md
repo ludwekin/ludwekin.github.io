@@ -2,6 +2,8 @@
 
 title : "Linux编程，内核裁切,相关笔记"
 
+published : false
+
 ---
 
 ## Linux内核裁切是什么技术？
