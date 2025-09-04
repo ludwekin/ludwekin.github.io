@@ -62,24 +62,25 @@ author:
   avatar : "/assets/images/avatar.jpeg"
   logo: "/assets/images/avatar.jpeg"
 
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  # bio    : "想要过好每一天。"
+
+  # bio    : "一两笔带过的人生，在这里可以随意书写。"
+
+  # bio    : "值得被书写的不是技术和水平，而是你独特的思考过程。"
+
+  # bio: "I want to make the most of every day."
+
+  # bio: "A life briefly sketched—here it can be written freely."
+
+  bio: "What deserves to be written is not skills or achievements, but your unique thought process."
+
+  # bio: "My awesome biography constrained to a sentence or two goes here."
+
   links:
    # - label: "Website"
-  #    icon: "fas fa-fw fa-link"
-  #    url: "https://"
+   #   icon: "fas fa-fw fa-link"
+   #   url: "https://"
    # - label: "Twitter"
-   #   icon: "fab fa-fw fa-twitter-square"
-   #   url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ludwekin"
-   # - label: "Instagram"
-    #  icon: "fab fa-fw fa-instagram"
-   #   url: "https://instagram.com/"
-
-footer:
-  links:
-  #  - label: "Twitter"
    #   icon: "fab fa-fw fa-twitter-square"
    #   url: "https://twitter.com/"
     - label: "GitHub"
@@ -88,6 +89,18 @@ footer:
    # - label: "Instagram"
    #   icon: "fab fa-fw fa-instagram"
    #   url: "https://instagram.com/"
+
+footer:
+  links:
+   #  - label: "Twitter"
+   #    icon: "fab fa-fw fa-twitter-square"
+   #    url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ludwekin"
+   #  - label: "Instagram"
+   #    icon: "fab fa-fw fa-instagram"
+   #    url: "https://instagram.com/"
 
 defaults:
   # _posts
