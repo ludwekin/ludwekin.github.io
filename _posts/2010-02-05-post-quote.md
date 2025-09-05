@@ -11,3 +11,7 @@ title: "Post: Quote"
 > "The limits of my language mean the limits of my world."  
 
 > <cite><a href="https://en.wikiquote.org/wiki/Ludwig_Wittgenstein">Ludwig Wittgenstein, *Tractatus Logico-Philosophicus* (1921)</a></cite>
+
+
+> *What I cannot create, I do not understand — Richard Feynman.*
+
