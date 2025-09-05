@@ -179,3 +179,33 @@ int main(int argc, char *argv[]) {
     return app.exec();
 }
 ```
+
+
+ qml.qrc 属于 Qt 的资源系统 (Qt Resource System)。
+
+ Model–View–Delegate (MVD) 和 MVC (Model–View–Controller) 是相似但不完全相同的架构模式。Qt/QML 里面用的是 MVD。
+
+
+Qt 里用 Model–View–Delegate，因为 UI 里会有大量 重复的条目（列表、表格、树…），单个控制器不好管理，所以 Qt 引入了 Delegate 来取代 Controller 的一部分职责。
+	•	Model (模型)
+	•	提供数据，比如 ListModel 或 QAbstractListModel。
+	•	例子：你的 AlarmModel 保存了所有闹钟的数据。
+	•	View (视图)
+	•	用来显示模型中的多个条目，比如 ListView、TableView。
+	•	例子：你的 ListView，负责显示闹钟列表。
+	•	Delegate (委托)
+	•	定义 每一个条目的显示和交互方式。
+	•	例子：你的 AlarmDelegate (ItemDelegate) 显示时间、日期、开关、删除按钮。
+	•	每一行的交互逻辑都由 Delegate 自己处理，比如点击开关更新 activated。
+
+⸻
+
+📖 对比
+	•	MVC：Controller 是统一的，所有交互都经过 Controller 再更新 Model。
+	•	MVD：每个 View 条目都有一个 Delegate，Delegate 自己处理交互，直接和 Model 绑定。
+
+换句话说：
+	•	在 Qt/QML 里，Delegate 就是“每行的小 Controller + View”。
+	•	这样让复杂的列表更容易写。
+
+⸻
