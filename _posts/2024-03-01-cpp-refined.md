@@ -4,11 +4,32 @@ title : "C++ 个人学习笔记"
 
 ---
 
+
+
+
+
+## C++基础
+
+1. 对象与指针：
+    - `Animal a; `这段代码，a 本身就是一个 Animal 对象。a是个栈对象。
+    - `Animal* p = &a; ` p 是指针，存的是 a 的地址。变量 p 里存放的是一个 地址值。这个地址指向内存中 a 所在的位置。用 *p 可以访问 a。
+2. new关键字与对象与隐式转换：
+    - `Animal* p = new Dog();`	这段代码，new Dog() 在堆上创建一个 Dog 对象。返回堆内存的地址 (类型是 Dog*)。隐式转为 Animal*，存到 p。	所以 p 本质上是一个“指向 Animal 的指针”。Dog对象需要用 delete 手动释放（或用智能指针）。优点是对象可以在作用域外继续存在，更灵活。
+
+
+
 ## C++ 简述与发展史
 
 C++ 是由 Bjarne Stroustrup 在 1980 年代初期于贝尔实验室开发的编程语言。
 
----
+C++ 常常被用来开发编译器和虚拟机，因为它的性能表现不错。
+
+
+
+## 笔记
+
+1. 标准情况**：每个 `.cpp` 文件生成 **1 个 `.obj` 文件**  。
+2. 一个项目，肯定有不止一个cpp文件，这很好理解。为了让项目结构清晰，把代码按照功能分开写到不同文件里面是很正常的。
 
 ## 常见问题解答
 
@@ -484,3 +505,224 @@ Socket在网络游戏中主要实现玩家间的实时同步。
 - 后端游戏服务器工程师  
 - 实时系统工程师
 - 游戏引擎开发者
+
+
+
+
+## c++的底层原理在哪里学？
+
+```markdown
+## C++ 底层原理的学习路径
+
+### 1. 语言标准与编译原理
+- **C++ 标准文档**（ISO C++ Draft）  
+- **《Programming Languages: C++》** by Bjarne Stroustrup  
+- **编译原理 (Dragon Book)**  
+
+内容：C++ 是如何从源代码变成机器码的。  
+
+---
+
+### 2. 编译器实现
+- LLVM / Clang 源码  
+- GCC 源码  
+- 学习 C++ 的解析、AST（抽象语法树）、优化、代码生成。  
+
+---
+
+### 3. 运行时与内存模型
+- **对象模型**：虚函数表、继承布局、对象内存布局。  
+- **内存管理**：栈、堆、静态区。  
+- 推荐：《Inside the C++ Object Model》（深度解析虚函数、对象布局）。  
+
+---
+
+### 4. 调试与反汇编
+- 使用 **lldb** 或 **gdb**，结合 `-g` 和 `objdump -d`。  
+- 学习 C++ 语句在汇编层面的对应。  
+
+---
+
+### 5. 系统接口
+- **操作系统接口**：POSIX API、Windows API。  
+- **C++ 与系统调用的关系**：I/O、线程、内存分配。  
+
+---
+
+## 推荐书籍
+1. 《C++ Primer》 → 入门与实践  
+2. 《Effective C++》 → 编程思想  
+3. 《深入理解计算机系统 (CSAPP)》 → 底层运行机制  
+4. 《Inside the C++ Object Model》 → 对象模型原理  
+
+---
+
+## 总结
+学习 C++ 底层原理 = **语言标准 + 编译器 + 对象模型 + 汇编/系统接口**。  
+常见路线：  
+**C++ Primer → CSAPP → 编译原理 → LLVM → Inside C++ Object Model**  
+```
+
+
+
+
+## 问题，加搜索答疑
+
+1. C++ 是 **静态类型语言**。这怎么理解？
+
+
+## 如何学习 C++ 与系统接口
+
+```markdown 
+## 如何学习 C++ 与系统接口
+
+### 1. 理解操作系统接口
+- **POSIX API** → 类 Unix 系统的标准接口  
+  - 文件操作：`open`, `read`, `write`, `close`  
+  - 进程控制：`fork`, `exec`, `wait`  
+  - 线程：`pthread_create`, `pthread_join`  
+  - 网络：`socket`, `bind`, `listen`, `accept`  
+
+- **Windows API** → Windows 系统特有接口  
+  - 文件 I/O：`CreateFile`, `ReadFile`, `WriteFile`  
+  - 进程：`CreateProcess`, `WaitForSingleObject`  
+  - 线程：`CreateThread`  
+  - 网络：Winsock（`WSAStartup`, `socket`）  
+
+---
+
+### 2. 在 C++ 中调用
+- C++ 没有自己独立的系统调用，底层还是通过 **操作系统 API**。  
+- 举例：`std::thread` 底层在 Linux 上调用 `pthread`，在 Windows 上调用 `CreateThread`。  
+
+---
+
+### 3. 学习方式
+1. **书籍**  
+   - 《Advanced Programming in the UNIX Environment》 (APUE)  
+   - 《Windows System Programming》  
+
+2. **实验**  
+   - 在 Linux 用 `g++` 写一个文件读写程序，直接调用 `open`, `read`, `write`。  
+   - 在 Windows 写一个小程序调用 `CreateFile` 和 `ReadFile`。  
+
+3. **比较 C++ 封装与系统调用**  
+   - 对比 `std::ifstream` vs `open/read`。  
+   - 对比 `std::thread` vs `pthread_create`。  
+
+---
+
+### 4. 实践建议
+- 从 **文件 I/O** 开始最直观，写简单 demo。  
+- 然后学习 **进程 / 线程**，理解并发的实现方式。  
+- 再深入 **网络编程**（socket）。  
+
+---
+
+## 总结
+- C++ 的底层 I/O、线程等能力，本质上依赖操作系统接口。  
+- 学习方法：读 API 文档 + 写小程序实验 + 对比 C++ 标准库封装。  
+```
+
+## C++ 是静态类型语言，这句话怎么理解？
+
+```markdown  
+C++ 是 **静态类型语言**。意思是：  
+- 变量的类型在 **编译时** 就已经确定。  
+- 编译器在编译阶段会进行类型检查。  
+- 程序运行时不会改变变量的类型。  
+```
+
+## 代码分析
+
+1. 虚函数和派生
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class Base {
+public:
+    virtual void speak() { cout << "Base\n"; }
+};
+
+class Derived : public Base {
+public:
+    void speak() override { cout << "Derived\n"; }
+};
+
+int main() {
+    Base* p = new Derived();
+    p->speak(); // 运行时决定调用 Derived::speak()
+}
+```
+上面这段代码，里面怎么理解`Base* p = new Derived();`?
+
+`Base* p = new Derived();` 体现了 **继承 + 多态** 的核心原理。  
+
+`new Derived()`，这是在 堆内存 分配一块空间。同时调用 Derived 构造函数，构造出一个完整的 Derived 对象。返回一个指向该对象的 指针 (Derived*)。
+
+
+## `using namespace std;` 的作用
+
+```markdown
+`using namespace std;` 的作用是把 **命名空间 `std`** 下的所有名字引入当前作用域。  
+
+在 C++ 中，标准库的大部分内容（如 `cout`, `cin`, `string`, `vector`）都定义在 `namespace std` 里面。  
+加上 `using namespace std;` 后，可以直接写 `cout << ...`，而不用写 `std::cout << ...`。
+```
+
+## xxx.h文件
+
+xxx.h文件和xxx.cpp文件一般都是同时出现的，我的理解是，有时候xxx.cpp是闭源的，这时xxx.h就相当于一个开放的api。
+
+## C++ 注释写法
+
+```cpp
+// 单行注释
+/* 多行注释 */
+```
+
+## include的两种写法
+
+```cpp
+#include <stdio.h>
+#include "lib/lowlevelmath.h"
+```
+
+## bash环境中gcc的用法
+
+```bash
+# 在 **GCC** 和 **Clang** 中，命令行选项的顺序基本没有区别。  
+- `gcc -c -o main.o code.c`  
+- `clang -c -o main.o code.c`  
+```
+
+## 头文件不用编译
+
+在 C/C++ 项目里：
+- `.h` / `.hpp` 文件是 **头文件**，只包含声明（函数原型、类定义、宏、常量等），通常不单独编译。  
+- `.c` / `.cpp` 文件是 **源文件**，包含具体实现，需要编译生成 `.o` 或 `.obj`。  
+- 编译器在编译 `.cpp` 时，会把 `#include "xxx.h"` 展开，相当于把头文件内容复制进来。  
+
+## 为什么 `xxx.cpp` 要 `#include "xxx.hpp"`?
+
+核心原因：**保持声明与实现一致**。但是我没学明白这里。
+
+## 基本上所有的hpp文件里面都要写#ifndef
+
+目的是：防止头文件被多次包含，导致重复定义错误。
+
+
+
+
+
+
+
+
+## 我整理的自用学习资源
+
+1. 学习 c/cpp 的头文件原理。[c header](https://www.youtube.com/watch?v=tOQZlD-0Scc).
+2. cpp的创始人，回答学会cpp要多久的视频。[cpp how long to learn](https://www.youtube.com/watch?v=oIFkg1zQE-0).
+3. 
+

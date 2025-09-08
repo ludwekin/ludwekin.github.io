@@ -44,3 +44,44 @@ published : false
 ## Linux编程特点
 
 1. 程序分为两大类，一个内核态，一个用户态。
+
+
+## POSIX API 
+
+```markdown
+### POSIX API 简单介绍
+**POSIX API** 指一组遵循 **POSIX (Portable Operating System Interface)** 标准的系统调用和库函数。  
+- 目标：保证类 Unix 系统（Linux、macOS、BSD 等）的可移植性。  
+- 主要提供对操作系统核心功能的访问。
+
+#### 常见功能分类  
+1. **进程管理**  
+   - `fork()`, `exec()`, `wait()`, `exit()`  
+2. **文件与目录操作**  
+   - `open()`, `read()`, `write()`, `close()`, `stat()`, `mkdir()`  
+3. **设备 I/O**  
+   - 一切设备都抽象为文件，调用 `read()`, `write()`  
+4. **内存管理**  
+   - `mmap()`, `munmap()`  
+5. **信号处理**  
+   - `signal()`, `sigaction()`, `kill()`  
+6. **线程 (POSIX Threads, pthreads)**  
+   - `pthread_create()`, `pthread_join()`  
+7. **进程间通信 (IPC)**  
+   - 管道 `pipe()`、消息队列、共享内存、信号量  
+8. **套接字网络**  
+   - `socket()`, `bind()`, `listen()`, `accept()`, `connect()`  
+
+#### 特点  
+- 接口风格统一，简洁，底层直接映射到内核调用。  
+- 不同操作系统只要实现 POSIX，就能运行相同的源代码。  
+
+### 所属领域  
+- **计算机科学** → **操作系统**、**系统编程**  
+
+### 涉及职业  
+- 操作系统工程师  
+- 系统软件开发工程师  
+- 嵌入式开发工程师  
+- 后端服务器开发人员  
+```

@@ -14,8 +14,15 @@ published : false
     → 你可以去一趟图书馆，如果你需要那本书的话。
 2. Chop the onions before cooking.
 
-	→ 烹饪前把洋葱切碎。
+    → 烹饪前把洋葱切碎。
+3. In essence, the problem is a lack of communication.  
+    → 本质上，这个问题是沟通不足。
 
+4. The virus looks like a tiny spiky ball under the microscope.  
+    → 这种病毒在显微镜下看起来像一个小小的带刺球。  
+
+5. Study hard, **otherwise** you will fail. 
+	→ 努力学习，否则你会不及格。 |
 ---
 
 ## Finding Fun in English Spelling

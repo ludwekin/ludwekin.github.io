@@ -3,6 +3,7 @@
 title: "自制飞控（autopilot）pcb，运行px4,项目经验总结"
 
 published : true
+
 ---
 
 
@@ -173,3 +174,11 @@ published : true
     - 数学与线性代数：提供理论基础。
     - 计算机图形学：角色和相机的旋转计算。
     - 控制工程与航空电子：飞控、机器人、航天姿态控制。
+
+
+
+## 参考资料
+
+1. 下图是一个穿越机自组教程图文，可以参考。图文的作者是[小白](https://space.bilibili.com/1089966909)。
+![image-center](/assets/images/drone_assembly.png){: .align-center}
+
