@@ -1,12 +1,12 @@
 ---
 
-title : "在夜之城迷路，也甘愿：我的 Cyberpunk 2077 游戏体验"
+title : "Becoming a Legend of Night City: My Cyberpunk 2077 Experience"
 
 published : true
 
 ---
 
-## 游戏概述
+## Game Overview
 
 Cyberpunk 2077 是一款开放世界角色扮演游戏，背景设定在未来的夜之城。玩家扮演雇佣兵 V，可以自由探索城市、接取任务、发展技能，并与各种角色互动。游戏结合了动作、潜行、剧情分支和角色养成元素，让每一次游玩都可能有不同体验。
 

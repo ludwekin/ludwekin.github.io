@@ -8,7 +8,7 @@ published : true
 
 
 
-### 分布式思想的来源
+### The origin of distributed thinking
 
 1. **早期计算机科学背景**
 
