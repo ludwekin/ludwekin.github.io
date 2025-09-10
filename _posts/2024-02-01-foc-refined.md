@@ -2,6 +2,8 @@
 
 title: "FOC算法、电机控制及相关开源项目学习笔记"
 
+published : false
+
 ---
 
 # FOC（Field-Oriented Control）算法学习笔记

@@ -1,5 +1,9 @@
 ---
+
 title: "Yandere Simulator: Gameplay Worth Studying"
+
+published : false
+
 ---
 
 **Yandere Simulator**, an indie stealth-action game, first gained notoriety through viral gameplay videos—especially on Chinese platforms—where its unsettling theme of “kill, kill, kill” is prominently featured. Yet beyond its visceral premise lies a complex web of mechanics, narrative systems, and player-driven emergent scenarios that make the game a compelling subject for design analysis.

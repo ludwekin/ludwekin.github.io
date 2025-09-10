@@ -6,6 +6,70 @@ published : true
 
 ---
 
+
+
+
+## Development Journey
+
+This blog started as a mix of personal notes/diaries with inconsistent formats, then shifted to regular study notes, and now it has evolved into a mix of study notes, project showcases, and experience sharing. It has been a little over two years. During this period, I paused many times, deleted a lot of entries (sometimes my old writings felt too childish), and in fact, it wasn’t even hosted on this site at the beginning (it was on an AWS server). Looking back, I think this journey is quite interesting and worth recording.
+
+---
+
+### The Initial Spark: Wanting to Build a Website
+
+Back when I first entered university, I had plenty of time (well, not really, there were many classes), and I thought about building a website, though I wasn’t sure what kind of website it should be. At that time, I bought a tutorial that taught how to quickly set up a simple card-selling website.
+
+Later, during the second semester of my freshman year, I came across Baota Server, domain registration/ICP filing, and cloud computing. However, I still had no clear idea of **what kind of website I wanted to build**.
+
+---
+
+### The Idea of Recording
+
+I never thought about documenting my life or my study notes—until sophomore year.
+
+At that time, Notion was getting popular, as well as Obsidian. But most of the posts I saw about them looked like marketing for online courses, and they seemed hard to get into, so I didn’t try them.
+
+Still, I began recording things. Around sophomore year, I switched to an iPhone. I liked Apple’s simplicity, especially the built-in Notes app. I also used Reminders. But I soon realized I had too many reminders to organize, and my notes were messy and unpleasant to read. That made me frustrated, and I ended up deleting many of them.
+
+---
+
+### A Turning Point? Not Really, Just by Chance
+
+Around junior year, I started using Notion and made a rule for myself: record properly—whether it’s a diary, study notes, or even skill outputs—and never delete them once written!
+
+By this stage, I had reached a state I liked. I didn’t even need to “study” how to use Notion; I just used it naturally, and it turned out quite neat (at least for myself). I began systematically organizing ideas, notes, and thoughts. Still, I hadn’t considered **publishing** anything yet.
+
+Around that time, I also applied for a Singapore credit card, which allowed me to get an AWS cloud server. I used EC2 and spent nights typing commands on Ubuntu, with the black ssh terminal even haunting my dreams. In the end, I failed to set it up properly. Instead, I took a shortcut: using Baota Panel to set up a WordPress site.
+
+(There were lots of troubles along the way—for example, I initially disliked Baota because it felt too bloated, so I tried an open-source alternative called 1Panel. But my server wasn’t powerful enough and crashed more than 10 times. I gave up eventually.)
+
+I also learned how to bind a domain. After searching through both Chinese and English resources, I finally got a free subdomain from ClouDNS. It was a nice-looking domain and I bound it to the site. Unfortunately, I didn’t save any screenshots. In the end, I shut down the AWS server because the free trial only lasted one year. Sure, I could reapply every year, but I wanted a **better solution**.
+
+---
+
+### The Content Output Stage
+
+This is the most recent stage.
+
+The **better solution** is what I’m using now: a static website hosted on GitHub Pages. The advantage is obvious—it’s free.
+
+At this point, I started learning Markdown syntax and occasionally writing about project experiences and technical sharing. That’s about where I am now.
+
+The story isn’t finished yet, though. I haven’t fully figured out how to consistently output content, and I’m still experimenting with it.
+
+---
+
+## Conclusion
+
+Record more. I don’t know the exact reason, but maybe it really is meaningful.
+
+
+
+
+
+
+
+
 <!--  
 ## 博客发展历程
 
@@ -61,60 +125,3 @@ published : true
 
 多多记录吧，我也不知道原因，也许挺有意义的。
 -->
-
-
-
-
-## Development Journey
-
-This blog started as a mix of personal notes/diaries with inconsistent formats, then shifted to regular study notes, and now it has evolved into a mix of study notes, project showcases, and experience sharing. It has been a little over two years. During this period, I paused many times, deleted a lot of entries (sometimes my old writings felt too childish 🙄), and in fact, it wasn’t even hosted on this site at the beginning (it was on an AWS server). Looking back, I think this journey is quite interesting and worth recording.
-
----
-
-### The Initial Spark: Wanting to Build a Website
-
-Back when I first entered university, I had plenty of time (well, not really, there were many classes), and I thought about building a website, though I wasn’t sure what kind of website it should be. At that time, I bought a tutorial that taught how to quickly set up a simple card-selling website.
-
-Later, during the second semester of my freshman year, I came across Baota Server, domain registration/ICP filing, and cloud computing. However, I still had no clear idea of **what kind of website I wanted to build**.
-
----
-
-### The Idea of Recording
-
-I never thought about documenting my life or my study notes—until sophomore year.
-
-At that time, Notion was getting popular, as well as Obsidian. But most of the posts I saw about them looked like marketing for online courses, and they seemed hard to get into, so I didn’t try them.
-
-Still, I began recording things. Around sophomore year, I switched to an iPhone. I liked Apple’s simplicity, especially the built-in Notes app. I also used Reminders. But I soon realized I had too many reminders to organize, and my notes were messy and unpleasant to read. That made me frustrated, and I ended up deleting many of them.
-
----
-
-### A Turning Point? Not Really, Just by Chance
-
-Around junior year, I started using Notion and made a rule for myself: record properly—whether it’s a diary, study notes, or even skill outputs—and never delete them once written!
-
-By this stage, I had reached a state I liked. I didn’t even need to “study” how to use Notion; I just used it naturally, and it turned out quite neat (at least for myself). I began systematically organizing ideas, notes, and thoughts. Still, I hadn’t considered **publishing** anything yet.
-
-Around that time, I also applied for a Singapore credit card, which allowed me to get an AWS cloud server. I used EC2 and spent nights typing commands on Ubuntu, with the black ssh terminal even haunting my dreams. In the end, I failed to set it up properly. Instead, I took a shortcut: using Baota Panel to set up a WordPress site.
-
-(There were lots of troubles along the way—for example, I initially disliked Baota because it felt too bloated, so I tried an open-source alternative called 1Panel. But my server wasn’t powerful enough and crashed more than 10 times. I gave up eventually.)
-
-I also learned how to bind a domain. After searching through both Chinese and English resources, I finally got a free subdomain from ClouDNS. It was a nice-looking domain and I bound it to the site. Unfortunately, I didn’t save any screenshots. In the end, I shut down the AWS server because the free trial only lasted one year. Sure, I could reapply every year, but I wanted a **better solution**.
-
----
-
-### The Content Output Stage
-
-This is the most recent stage.
-
-The **better solution** is what I’m using now: a static website hosted on GitHub Pages. The advantage is obvious—it’s free.
-
-At this point, I started learning Markdown syntax and occasionally writing about project experiences and technical sharing. That’s about where I am now.
-
-The story isn’t finished yet, though. I haven’t fully figured out how to consistently output content, and I’m still experimenting with it.
-
----
-
-## Conclusion
-
-Record more. I don’t know the exact reason, but maybe it really is meaningful.

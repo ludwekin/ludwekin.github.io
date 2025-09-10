@@ -1,6 +1,6 @@
 ---
 
-title : "正在复刻Sahko的手环设计，经验分享"
+title : "Sahko watch"
 
 published : false
 

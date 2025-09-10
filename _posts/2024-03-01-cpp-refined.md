@@ -2,6 +2,8 @@
 
 title : "C++ 个人学习笔记"
 
+published : false
+
 ---
 
 
@@ -762,9 +764,9 @@ lldb 。
 
 
 
-## 我整理的自用学习资源
+## Links to study something about cpp
 
-1. 学习 c/cpp 的头文件原理。[c header](https://www.youtube.com/watch?v=tOQZlD-0Scc).
-2. cpp的创始人，回答学会cpp要多久的视频。[cpp how long to learn](https://www.youtube.com/watch?v=oIFkg1zQE-0).
-3. 
+1. Cpp head file explained. [c header](https://www.youtube.com/watch?v=tOQZlD-0Scc).
+2. Founder of cpp, talk show. [cpp how long to learn](https://www.youtube.com/watch?v=oIFkg1zQE-0).
+3. Cherno's teaching of cpp. [cpp tutotials](https://www.youtube.com/@TheCherno).
 

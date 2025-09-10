@@ -1,29 +1,60 @@
 ---
 
-title: "自制飞控（autopilot）pcb，运行px4,项目经验总结"
+title: "Design a Drone PCB，with PX4 Firmware"
 
-published : true
+published : false
 
 ---
 
+### fly control, the central chip
 
-### PX4 项目
+F743（商用飞控最经典芯片型号）基本一直缺货。F7其他型号的也是经常缺货。
 
 
+### gyro
+
+飞控主板给gyro等等芯片供电基本都需要3.3V的电压转换器。我一般先选择 NCP 1117 3.3V regulator。
+
+### IMU
+
+MPU6000,常出现的imu型号，但是停产了。
 
 
-## 通用知识点汇总
+### pcb layout
 
-1. 飞控芯片选用F4还是F7呢？F743（商用飞控最经典芯片型号）基本一直缺货。F7其他型号的也是经常缺货。
-2. 飞控主板上给 gyro等等供电肯定要 一个转成3.3V的电压转换器。先选择 NCP 1117 3.3V regulator 吧。然后 IMU 选 MPU6000 就行。然后得有个 USB 接口，方便和电脑 通信。其他 电阻什么的，最好0402尺寸的，不然PCB板子会太大了。
-3. MAVLink 就像无人机和上位机之间的“语言”，负责信息传递、指令下发和状态同步。掌握 MAVLink 可以让你独立开发上位机软件或无人机控制程序。
-4. PX4 上位机就是地面控制软件（QGroundControl、MAVProxy）。
-5. PX4 里面有一个 uORB（micro Object Request Broker） → 类似 事件系统 / 发布-订阅框架。
+电阻电容最好选0402尺寸的。
+
+High-Power and signal cables should be separated as much as is practical.
+
+
+## PX4
+ 
+ ### PX4 上位机
+ PX4 上位机就是地面控制软件（QGroundControl、MAVProxy）。
+
+ ### PX4的发布和订阅机制
+
+ PX4 里面有一个 uORB（micro Object Request Broker），类似 事件系统 / 发布-订阅框架。
 
     - 各模块（传感器、控制器、任务管理）不直接调用对方，而是通过消息发布和订阅交互。
 
     - 这就是 事件驱动框架 + 环形缓冲区 在飞控中的使用案例。
-    - 传感器模块 → 发布 IMU_DATA；估计器 (EKF) → 订阅 IMU_DATA，然后发布 STATE_ESTIMATE；控制器 → 订阅 STATE_ESTIMATE 和 RC_INPUT，输出控制量；电机驱动 → 订阅 CONTROL_OUTPUT，驱动 PWM。
+    - 传感器模块 → 发布 IMU_DATA；估计器 (EKF) → 订阅 IMU_DATA，然后发布STATE_ESTIMATE；控制器 → 订阅 STATE_ESTIMATE 和 RC_INPUT，输出控制量；电机驱动 → 订阅 CONTROL_OUTPUT，驱动 PWM。
+
+
+ ### MAVLink 
+
+ MAVLink 就像无人机和上位机之间的“语言”，负责信息传递、指令下发和状态同步。掌握 MAVLink 可以让你独立开发上位机软件或无人机控制程序。
+
+
+
+
+
+
+
+
+4. PX4 上位机就是地面控制软件（QGroundControl、MAVProxy）。
+5. 
 6. 估计器 (EKF)是什么？
 
     EKF（扩展卡尔曼滤波，Extended Kalman Filter）是飞控系统里一个核心大脑的角色，主要用于状态估计。或者说，是一种用于多传感器融合的状态估计算法，帮助飞控系统实时得到可靠的位置、速度、姿态。它是无人机飞行稳定和导航的核心算法之一。

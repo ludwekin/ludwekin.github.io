@@ -1,5 +1,5 @@
 ---
-title : "计算机图形学，相关知识点及个人理解"
+title : "OpenGL"
 
 published : false
 

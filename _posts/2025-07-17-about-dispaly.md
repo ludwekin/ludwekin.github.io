@@ -1,6 +1,6 @@
 ---
 
-title : "嵌入式设备/电子设备屏幕选择，相关笔记分享"
+title : "Choose a diplay unit"
 
 published : false
 

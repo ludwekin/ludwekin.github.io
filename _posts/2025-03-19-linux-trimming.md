@@ -1,6 +1,6 @@
 ---
 
-title : "Linux编程，内核裁切,相关笔记"
+title : "Linux Trimming"
 
 published : false
 

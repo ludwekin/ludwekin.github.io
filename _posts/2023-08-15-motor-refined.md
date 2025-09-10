@@ -2,6 +2,8 @@
 
 title: "FOC电机控制深入学习笔记"
 
+published : false
+
 ---
 
 ## 前言

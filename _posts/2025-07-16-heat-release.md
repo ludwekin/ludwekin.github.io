@@ -1,6 +1,6 @@
 ---
 
-title : "Design your own phone cooler"
+title : "Phone cooler"
 
 published : false
 

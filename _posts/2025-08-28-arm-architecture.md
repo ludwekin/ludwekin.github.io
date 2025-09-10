@@ -1,6 +1,8 @@
 ---
 
-title : "ARM Architecture Development History"
+title : "ARM Architecture"
+
+published : false
 
 ---
 

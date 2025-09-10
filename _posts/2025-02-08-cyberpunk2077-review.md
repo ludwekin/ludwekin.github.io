@@ -1,8 +1,8 @@
 ---
 
-title : "Becoming a Legend of Night City: My Cyberpunk 2077 Experience"
+title : "My Cyberpunk 2077 Experience"
 
-published : true
+published : false
 
 ---
 

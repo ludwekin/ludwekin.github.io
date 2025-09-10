@@ -6,7 +6,7 @@ published : false
 
 ---
 
-1. 设计核心点，扬声器一定要达到很高的分贝，播报手机号。
+1. Key point of design，the speaker must reach a very high volume to announce the phone number.
 2. 定位伞，钥匙，卡（身份证和银行卡）。
 
 
