@@ -6,6 +6,18 @@ published : false
 
 ---
 
+
+Fly control some kind of belongs to 
+
+
+
+
+
+
+
+
+
+
 ### fly control, the central chip
 
 F743（商用飞控最经典芯片型号）基本一直缺货。F7其他型号的也是经常缺货。

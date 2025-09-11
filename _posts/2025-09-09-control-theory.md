@@ -2,7 +2,7 @@
 
 title : "Control Theory"
 
-published : false
+published : true
 
 ---
 

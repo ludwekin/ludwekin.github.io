@@ -740,6 +740,10 @@ lldb 。
 
 
 
+
+
+
+
 ### 代码分析
 
 `char* buffer = new char[8];`, this line of code will allocate a 8 bytes space, and the pointer is the address of the space beginning.
@@ -757,6 +761,20 @@ lldb 。
 
 
 
+### frame
+
+A **frame** (or **stack frame**) represents **one function call** in memory.  
+
+Every time a function is called:
+  1. A new frame is pushed onto the **call stack**.
+  2. The frame contains:
+     - Function parameters
+     - Local variables
+     - Return address (where the program should continue after the function finishes)
+
+ When the function returns, its frame is popped off the stack.
+
+
 
 
 
@@ -769,4 +787,4 @@ lldb 。
 1. Cpp head file explained. [c header](https://www.youtube.com/watch?v=tOQZlD-0Scc).
 2. Founder of cpp, talk show. [cpp how long to learn](https://www.youtube.com/watch?v=oIFkg1zQE-0).
 3. Cherno's teaching of cpp. [cpp tutotials](https://www.youtube.com/@TheCherno).
-
+4. [Tour of cpp](https://isocpp.org/tour), this is written by Bjarne Stroustrup.

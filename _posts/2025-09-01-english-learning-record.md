@@ -37,6 +37,24 @@ published : false
 10. From the data, we can deduce that sales have increased.
 	→ 从这些数据中，我们可以**推断**销售额上升了。
 
+11. **We need to mitigate the risks of this project.**  
+	→ 我们需要 **减轻/降低** 这个项目的风险。  
+
+12. A good manager delegates tasks to the team." 
+	→ “好的经理会把任务分派给团队。”  
+
+13. We used an off-the-shelf software solution.  
+    → 我们使用了一个现成的软件方案。  
+
+14. The thief carried a **concealed** knife.  
+  小偷带了一把**隐藏的**刀。  
+
+15. The lawyer’s reasoning sounded convincing but was actually **sophistic**.  
+  律师的推理听起来有说服力，但实际上是**诡辩的**。 
+
+
+
+
 
 
 
@@ -58,5 +76,25 @@ published : false
 
 ## IELTS 
 
+I may take the IELTS in 2026. Some sources is useful. And I listed them as below.
 
-[IELTS Website](https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test)
+1. [IELTS Website](https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test)
+
+This website has officals examples and tests. You can get used to the listening part of the IELTS exam in advance.
+
+
+
+
+
+
+
+### How English Uses Apostrophes (') and Quotation Marks (")
+
+Examples:
+- "The Road Not Taken" by Robert Frost.  
+- "Bohemian Rhapsody" is my favorite song.  
+- I just read the article "Climate Change and Agriculture."	
+- "Stop!" she shouted.  
+- "I like pizza," he said.  
+- "I heard him say, 'I am tired,'" she said.  
+- 'Did you hear him say "hello"?' asked Tom.
