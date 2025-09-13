@@ -1,22 +1,24 @@
 ---
 
-title : "防丢器/定位器设计指南"
+title : "Design a locator, and embed it to any shape"
 
 published : false
 
 ---
 
-1. Key point of design，the speaker must reach a very high volume to announce the phone number.
-2. 定位伞，钥匙，卡（身份证和银行卡）。
+1. A good example of a locator is Airtag from Apple. So I want to learn from it.
+2. Can locate umbrellas, keys, and cards (ID cards and bank cards).
+3. It will do me a lot of good, when I can embed the locator to all my important things. For example, I can find "the thing" very quickly with the sound at home.
 
 
 
-## 有源蜂鸣器和无源区别？
+
+
+
+
+### Difference Between Active and Passive Buzzers
+
 ```markdown
-
-# 有源蜂鸣器 vs 无源蜂鸣器
-
-## 区别
 1. **驱动方式**
    - 有源蜂鸣器：内部集成震荡电路，只需直流电压即可发声。
    - 无源蜂鸣器：无震荡电路，需要外部提供交变信号（PWM）。
@@ -32,15 +34,4 @@ published : false
 4. **应用场景**
    - 有源蜂鸣器：提示音、报警音，简单提醒。
    - 无源蜂鸣器：音乐播放、复杂音效。
-
-## 所属领域
-- **电子工程**
-- **嵌入式系统**
-- **电声学**
-
-## 涉及职业
-- 电子工程师
-- 嵌入式开发工程师
-- 硬件设计工程师
-- 产品工程师（消费电子）
 ```

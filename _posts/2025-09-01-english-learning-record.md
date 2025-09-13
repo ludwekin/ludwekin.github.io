@@ -2,7 +2,7 @@
 
 title : "English IELTS Preparing Notes"
 
-published : false
+published : true
 
 ---
 
@@ -11,18 +11,18 @@ published : false
 
 1. You can head on over to the library if you need that book.
 
-    → 你可以去一趟图书馆，如果你需要那本书的话。
+    你可以去一趟图书馆，如果你需要那本书的话。
 2. Chop the onions before cooking.
 
-    → 烹饪前把洋葱切碎。
+    烹饪前把洋葱切碎。
 3. In essence, the problem is a lack of communication.  
-    → 本质上，这个问题是沟通不足。
+	本质上，这个问题是沟通不足。
 
 4. The virus looks like a tiny spiky ball under the microscope.  
-    → 这种病毒在显微镜下看起来像一个小小的带刺球。  
+    这种病毒在显微镜下看起来像一个小小的带刺球。  
 
 5. Study hard, **otherwise** you will fail. 
-	→ 努力学习，否则你会不及格。 
+	努力学习，否则你会不及格。 
 
 6. It was absolutely wonderful! Preparing for the test was really hectic, I must say, but it was really worth it in the end. I got an overall band score of 8.5!
 
@@ -35,22 +35,27 @@ published : false
 9. They introduced stricter rules that otherwise might have caused confusion.
 
 10. From the data, we can deduce that sales have increased.
-	→ 从这些数据中，我们可以**推断**销售额上升了。
+	从这些数据中，我们可以**推断**销售额上升了。
 
 11. **We need to mitigate the risks of this project.**  
-	→ 我们需要 **减轻/降低** 这个项目的风险。  
+	我们需要 **减轻/降低** 这个项目的风险。  
 
 12. A good manager delegates tasks to the team." 
-	→ “好的经理会把任务分派给团队。”  
+	“好的经理会把任务分派给团队。”  
 
 13. We used an off-the-shelf software solution.  
-    → 我们使用了一个现成的软件方案。  
+    我们使用了一个现成的软件方案。  
 
 14. The thief carried a **concealed** knife.  
-  小偷带了一把**隐藏的**刀。  
+	小偷带了一把**隐藏的**刀。  
 
 15. The lawyer’s reasoning sounded convincing but was actually **sophistic**.  
-  律师的推理听起来有说服力，但实际上是**诡辩的**。 
+	律师的推理听起来有说服力，但实际上是**诡辩的**。 
+
+16. "etc." is an abbreviation for the Latin phrase *et cetera*. 
+
+17. This map shows all the amenities in the city, including schools, hospitals, and restaurants.  
+	这张地图显示了城市中的所有设施，包括学校、医院和餐馆。
 
 
 

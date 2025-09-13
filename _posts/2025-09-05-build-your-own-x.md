@@ -20,3 +20,16 @@ published : false
 为了面试能过，你想要真正学懂，去问自己是不是真的懂了，怎么证明自己懂？
 
 去研究，面试会问什么？这就是方向。
+
+### common technology is no sense to me 
+
+Other people or company achieved it, but it's no sense for you.
+
+you didnt achieved it right?
+
+we should to help others to achieve, instead of push out boring service.
+
+or it should be two way, a service to let common people just immidiately use it. anouther one to make other people to achieve it. can i make earning?
+
+
+

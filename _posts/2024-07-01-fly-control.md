@@ -7,7 +7,7 @@ published : false
 ---
 
 
-Fly control some kind of belongs to 
+Fly control some kind of belongs to control theory catagory.
 
 
 
@@ -182,41 +182,39 @@ High-Power and signal cables should be separated as much as is practical.
     - 数学与概率论：状态估计、随机过程建模。
 
 ---
+### Quaternions
 
-### 四元数
+Summary of Quaternions:
 
-四元数总结：
+- **Basic Definition:**  
+  A quaternion is an extension of complex numbers used to describe rotations in 3D space.  
+  It consists of four real numbers:  
+  \[
+  q = w + xi + yj + zk
+  \]  
+  where **w** is the real part, and **x, y, z** are the imaginary parts.  
+  In flight control and graphics, a **unit quaternion** (length = 1) is commonly used to represent rotation.
 
-    - 基本定义：四元数是一种扩展复数的数学工具，可以用来描述三维空间中的旋转。它由四个实数构成 q = w + xi + yj + zk。其中 w 称为实部，x y z 称为虚部。在飞控和图形学中，通常用一个长度为1的单位四元数表示旋转。
+- **Why Flight Controllers Use Quaternions:**  
+  1. Euler angles are intuitive but suffer from **gimbal lock**, losing rotational freedom at certain angles.  
+  2. Rotation matrices fully represent rotation but require 9 elements and accumulate numerical errors.  
+  3. Quaternions need only 4 numbers, making storage and computation more efficient.  
+  4. Quaternion operations have no singularities, suitable for long-term integration updates.  
+  5. Quaternion-vector rotation calculations are faster than matrix multiplication, ideal for real-time control.
 
-    - 为什么飞控使用四元数？
-        1. 欧拉角虽然直观，但存在万向节死锁问题，某些角度下旋转自由度丢失。
-        2. 旋转矩阵能完整表示旋转，但存储需要9个元素，数值运算容易累积误差。
-        3. 四元数只需要4个数，存储和运算更高效。
-        4. 四元数运算中没有奇异点，适合长时间积分更新。
-        5. 四元数和向量的旋转计算比矩阵更快，适合实时控制。
+- **Applications in Flight Control:**  
+  - **Attitude Estimation:** Integrate angular velocity from gyroscopes to update the quaternion.  
+  - **Sensor Fusion:** Use accelerometer and magnetometer data to correct quaternion drift.  
+  - **Control Laws:** Compute attitude error directly from quaternions to drive PID or other control algorithms.  
+  - **Output Control:** Derive the vehicle's attitude relative to Earth from the quaternion for motor power distribution.
 
-    - 飞控中的应用：
-        - 姿态解算：通过陀螺仪测得角速度，积分更新四元数。
-        - 传感器融合：利用加速度计和磁力计的数据，校正四元数的漂移。
-        - 控制律：四元数直接用于计算姿态误差，驱动PID或其他控制算法。
-        - 输出控制：由四元数推导得到无人机机体相对地球的姿态，用于电机功率分配。
+**Comparison with Other Methods:**  
 
-四元数与其他方法的对比：
-    - 欧拉角
-        - 优点：直观，易于理解。
-        - 缺点：存在万向节死锁，数学计算复杂。
-    - 旋转矩阵
-        - 优点：数学表达完整直观。
-        - 缺点：存储冗余，数值容易漂移。
-    - 四元数
-        - 优点：避免死锁，存储高效，运算快速，适合实时应用。
-        - 缺点：不直观，不容易直接看出物理含义。
-
-相关研究领域：
-    - 数学与线性代数：提供理论基础。
-    - 计算机图形学：角色和相机的旋转计算。
-    - 控制工程与航空电子：飞控、机器人、航天姿态控制。
+| Method          | Advantages                              | Disadvantages                       |
+|-----------------|----------------------------------------|-------------------------------------|
+| Euler Angles    | Intuitive, easy to understand          | Susceptible to gimbal lock, complex math |
+| Rotation Matrix | Complete mathematical representation   | Redundant storage, numerical drift  |
+| Quaternion      | Avoids gimbal lock, efficient storage, fast computation, suitable for real-time | Not intuitive, hard to interpret physically |
 
 
 
@@ -224,31 +222,26 @@ High-Power and signal cables should be separated as much as is practical.
 
 
 
-
-## 参考资料
+## references
 
 1. 下图是一个穿越机自组教程图文，可以参考。图文的作者是[小白](https://space.bilibili.com/1089966909)。
 ![image-center](/assets/images/drone_assembly.png){: .align-center}
 
 
+### Traditional OSD (AT7456E) vs Digital Video OSD (HDZero / DJI)
 
-### 传统 OSD (AT7456E) 与 数字视频 OSD (HDZero/DJI) 的对比表
+| Feature              | Traditional OSD (AT7456E)                          | Digital Video OSD (HDZero / DJI, etc.)             |
+|----------------------|---------------------------------------------------|----------------------------------------------------|
+| **Signal Type**      | Analog video (PAL / NTSC)                         | Digital video stream (HD, digital transmission)    |
+| **Overlay Method**   | Dedicated OSD chip (AT7456E) writes characters directly into analog signal | Flight controller firmware packs data and transmits with the digital video stream |
+| **Hardware Dependence** | Requires dedicated OSD chip (AT7456E or compatible models) | No external chip needed, depends on digital system protocol |
+| **Display Clarity**  | Low resolution, dot-matrix fonts, limited clarity | High resolution, text and graphics can be vector-based, clearer display |
+| **Compatibility**    | Works with almost all analog FPV goggles/receivers | Depends on specific digital systems (DJI O3, HDZero, Walksnail) |
+| **Expandability**    | Only fixed fonts and simple symbols supported     | Can display graphical interfaces, full-color elements, even maps |
+| **Latency**          | Very low (chip-level overlay)                     | Same as digital video link, typically 20–40ms      |
+| **Application Scenarios** | Traditional FPV racing drones, low-cost analog systems | HD aerial filming, racing drones, scenarios requiring high information density |
 
-```markdown
-**传统 OSD (AT7456E) vs 数字视频 OSD (HDZero / DJI)**
 
-| 特性                 | 传统 OSD (AT7456E)                          | 数字视频 OSD (HDZero / DJI 等)                 |
-|----------------------|---------------------------------------------|------------------------------------------------|
-| **信号类型**         | 模拟视频 (PAL / NTSC)                       | 数字视频流 (HD, 数字传输)                      |
-| **叠加方式**         | 独立 OSD 芯片（AT7456E）在模拟信号上直接写入字符 | 由飞控固件将数据打包，随数字视频流一起传输      |
-| **硬件依赖**         | 需要专门 OSD 芯片（AT7456E 或兼容型号）      | 不需要外部芯片，依赖数字系统协议                |
-| **显示清晰度**       | 分辨率低，字符为点阵字体，清晰度受限         | 高分辨率，文字和图形可矢量化，显示更清晰        |
-| **兼容性**           | 几乎所有模拟 FPV 眼镜/接收机可用             | 依赖具体数字系统（DJI O3, HDZero, Walksnail）  |
-| **扩展性**           | 仅能显示固定字体和简单符号                  | 可显示图形化界面、全彩元素甚至地图              |
-| **延迟**             | 极低（芯片级叠加）                          | 与数字视频链路一致，一般 20–40ms               |
-| **应用场景**         | 传统 FPV 竞速无人机，低成本模拟系统          | 高清航拍、竞速无人机、需要高信息量显示的场景    |
+### SWD interface
 
-**结论**  
-- AT7456E 方案适合低成本、模拟 FPV 系统。  
-- 数字 OSD 方案适合需要高分辨率和扩展功能的现代无人机。  
-```
+ The **SWD interface**, full name **Serial Wire Debug**, is a commonly used **debug interface** for ARM Cortex series chips. It is a simplified alternative to **JTAG**, allowing chip debugging and programming using only **2 signal lines**.

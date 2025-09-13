@@ -2,7 +2,7 @@
 
 title : "Build Your Own Computer"
 
-published : false
+published : true
 
 ---
 
@@ -24,3 +24,12 @@ First, why xor means exclusive or? This is very interesting! Below is a truth ta
 So, the exclusive means, i want the input to be only one '1' instead of being two same '1'. so exclusive or just makes a xor gate.
 
 One bit adder is somehow not hard. But the 4 digit adder is hard.
+
+
+### punch hole to program
+
+为什么纸带打孔也能实现编程？
+
+    问了GPT：有孔就是1，没孔就是2。然后读纸带的时候是有时序的。机器会一格一格地送纸。而且纸带上还有专门的定位孔保证不错位。常用**八道纸带**。
+2. 
+3. 
