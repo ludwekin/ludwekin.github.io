@@ -57,6 +57,11 @@ published : true
 17. This map shows all the amenities in the city, including schools, hospitals, and restaurants.  
 	这张地图显示了城市中的所有设施，包括学校、医院和餐馆。
 
+18. "The basic feasibility of this has already been demonstrated in animals."
+
+19. "The experiment failed to produce the expected results, thus we need to reconsider our approach."  
+  
+20. "I wish to speak to my attorney".
 
 
 

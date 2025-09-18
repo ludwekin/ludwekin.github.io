@@ -25,6 +25,37 @@ Variable Structure Control (VSC) is a nonlinear control method. Its basic idea i
 - Instead of using a fixed control law, different control laws are applied depending on the system state in different regions.  
 - Through such switching, the system exhibits the desired stability during the dynamic process.  
 
+
+
+### ADP 
+
+
+### lqr
+
+
+### bsc
+
+
+### flc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### spwm
 
 SPWM (Sinusoidal Pulse Width Modulation)  
@@ -38,3 +69,5 @@ PWM (Pulse Width Modulation)
 - Uses pulses of fixed frequency, controlling voltage or power by varying the duty cycle (the ratio of high-level time to the total period).  
 - The waveform is a rectangular pulse.  
 - Applications: motor speed control, LED dimming, switching power supplies.  
+
+

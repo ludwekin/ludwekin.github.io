@@ -130,3 +130,25 @@ published : false
 ### 可控硅
 
 SCR：PNPN 四层三端，触发后自锁定，关断只能靠电流降到维持电流以下。  
+
+
+
+
+#### MR60F Interface
+
+A common battery/power connector developed by AMASS. Rated current: about 30–60A.  
+
+Interface type: **3 poles**, providing one more signal/power pin. Often used in three-phase power supply scenarios (e.g., between ESC and brushless motors).  
+
+
+
+
+#### SOIC package
+
+[SOIC package](https://en.wikipedia.org/wiki/Small_outline_integrated_circuit). Visit this site to know more about SOIC. 
+
+By the way, why are IC pins called "lead"? 
+
+Lead (the metal, Pb) was one of the most common materials in early electrical wiring, solder, and piping.  
+
+Many early electronic components (resistors, capacitors, vacuum tubes) used lead-based alloys (e.g., copper with tin-lead plating) for their external metal legs. As a result, these metal “legs” were naturally called **leads**.  

@@ -39,30 +39,6 @@ MPU6000,常出现的imu型号，但是停产了。
 High-Power and signal cables should be separated as much as is practical.
 
 
-## PX4
- 
- ### PX4 上位机
- PX4 上位机就是地面控制软件（QGroundControl、MAVProxy）。
-
- ### PX4的发布和订阅机制
-
- PX4 里面有一个 uORB（micro Object Request Broker），类似 事件系统 / 发布-订阅框架。
-
-    - 各模块（传感器、控制器、任务管理）不直接调用对方，而是通过消息发布和订阅交互。
-
-    - 这就是 事件驱动框架 + 环形缓冲区 在飞控中的使用案例。
-    - 传感器模块 → 发布 IMU_DATA；估计器 (EKF) → 订阅 IMU_DATA，然后发布STATE_ESTIMATE；控制器 → 订阅 STATE_ESTIMATE 和 RC_INPUT，输出控制量；电机驱动 → 订阅 CONTROL_OUTPUT，驱动 PWM。
-
-
- ### MAVLink 
-
- MAVLink 就像无人机和上位机之间的“语言”，负责信息传递、指令下发和状态同步。掌握 MAVLink 可以让你独立开发上位机软件或无人机控制程序。
-
-
-
-
-
-
 
 
 4. PX4 上位机就是地面控制软件（QGroundControl、MAVProxy）。
@@ -245,3 +221,149 @@ Summary of Quaternions:
 ### SWD interface
 
  The **SWD interface**, full name **Serial Wire Debug**, is a commonly used **debug interface** for ARM Cortex series chips. It is a simplified alternative to **JTAG**, allowing chip debugging and programming using only **2 signal lines**.
+
+
+
+ ### RTK
+
+---
+
+| Document | Type | Content | Link |
+|---|---|---|---|
+| Carlson Viking RTK White Paper | White Paper | Overview of RTK receiver design and performance | [PDF](https://www.carlsones.com/wp-content/uploads/2025/09/Carlson-Viking-RTK-White-Paper.pdf?utm_source=chatgpt.com) |
+| Challenges of Low-Cost GPS/GLONASS RTK for Road Users | Research Paper | Feasibility and challenges of low-cost GNSS devices using RTK | [PDF](https://www.insidegnss.com/auto/novdec13-WP.pdf?utm_source=chatgpt.com) |
+| The Role of RTK in the Autonomous System Sensor Suite | White Paper | RTK in autonomous driving sensor fusion, moving baseline RTK, heading estimation | [PDF](https://www.swiftnav.com/sites/default/files/whitepapers/moving_baseline_white_paper_092017.pdf?utm_source=chatgpt.com) |
+| Agriculture White Paper: RTK Base Station Networks | White Paper | RTK networks for agriculture and industrial adoption | [PDF](https://www.gpsags.com/media/RTK-Networks-Whitepaper.pdf?utm_source=chatgpt.com) |
+| Tersus ExtremeRTK Technology White Paper | White Paper | Hardware, algorithms, anti-jamming, multi-frequency GNSS, GNSS/INS fusion | [PDF](https://www.tersus-gnss.com/assets/upload/file/20210926114705660.pdf?utm_source=chatgpt.com) |
+| PPP-RTK Market and Technology Report (EUSPA) | Report | Market and technology trends of PPP-RTK hybrid positioning | [PDF](https://www.euspa.europa.eu/sites/default/files/calls_for_proposals/rd.03_-_ppp-rtk_market_and_technology_report.pdf?utm_source=chatgpt.com) |
+| User Guidelines for Single Base Real Time GNSS Positioning (NOAA/NGS) | Guideline | Practical guide for single base RTK, error sources, system setup | [PDF](https://www.ngs.noaa.gov/PUBS_LIB/NGSRealTimeUserGuidelines.v2.1.pdf?utm_source=chatgpt.com) |
+| Algorithm to Assist Robust Filter for Tightly Coupled RTK/INS Navigation | Research Paper | RTK tightly coupled with INS using robust Kalman filtering | [PDF](https://www.mdpi.com/2072-4292/14/10/2449?utm_source=chatgpt.com) |
+| Crowdsourcing RTK: New GNSS Positioning Framework | Journal Paper | Using crowdsourced GNSS data from vehicles to improve atmospheric correction for RTK | [Article](https://satellite-navigation.springeropen.com/articles/10.1186/s43020-024-00135-8?utm_source=chatgpt.com) |
+
+---
+
+
+
+
+### Dji m200 serials component
+
+#### Xilinx Zynq-7000 系列
+
+
+#### lc1860
+
+A baseband processor chip developed by **Leadcore Technology** (a subsidiary of Datang Telecom).  
+
+
+## 
+
+
+
+
+
+
+
+
+
+
+#### Optical Flow Sensor
+
+An optical flow sensor is a device that measures motion of objects, surfaces, or the sensor itself by detecting changes in the pattern of light across an image. It is commonly used in robotics, drones, and navigation systems to estimate velocity, displacement, or position without relying on GPS.
+
+
+#### GNSS
+
+Quectel LC29H GPS. Recently I need to embed it in a project.
+
+A high-precision GNSS module (Global Navigation Satellite System) produced by Quectel Wireless Solutions.
+
+Other Series of Quectel GNSS Modules (besides LC29)?
+| Series   | Description | Typical Applications | Official Link |
+|----------|-------------|----------------------|---------------|
+| **LC29H** | Dual-band, high-precision GNSS module. Supports RTK (Real-Time Kinematic) and optional Dead Reckoning (DR). | UAVs, autonomous driving, surveying, precision agriculture | [LC29H](https://www.quectel.com/product/gnss-lc29h/?utm_source=chatgpt.com) |
+| **LC29T** | High-integrity GNSS timing module. Provides precise timing outputs (10 MHz, PPS). | Telecommunications, power grid, critical infrastructure | [LC29T](https://www.quectel.com/product/gnss-lc29t/?utm_source=chatgpt.com) |
+| **LC76G** | Compact, single-band GNSS module. Multi-constellation, high sensitivity, low power. | IoT, asset tracking, general navigation | [LC76G](https://www.quectel.com/product/gnss-lc76g-series/?utm_source=chatgpt.com) |
+| **LG69T** | Dual-band GNSS module with optional RTK and DR, automotive-grade reliability. | Automotive navigation, ADAS, UAVs | [LG69T](https://www.quectel.com/product/gnss-lg69t-series/?utm_source=chatgpt.com) |
+| **LG77L** | Single-band, multi-constellation, compact and ultra-low power GNSS module. | Asset tracking, wearables, IoT devices | [LG77L](https://www.quectel.com/product/gnss-lg77l-series/?utm_source=chatgpt.com) |
+
+
+Talking about Quectel. By the way, Quectel is very closed to iot. They can be talked together.
+
+Quectel is a global IoT solutions provider specializing in cellular modules, Wi-Fi/GNSS modules, antennas, RTK corrections and IoT device certification services QuectelQuectel. Founded in 2010 and based in Shanghai, China, the company has grown to employ between 1,001-5,000 people as of July 2024.
+
+
+
+
+
+#### lidar
+
+VL53LOX.
+
+Maximum range of VL53LOX is 2m.
+
+
+### imu
+
+BMI088.
+
+I heard of it when I want to buy a board to run PX4. 
+
+
+
+
+
+## rtk
+
+[rtk explained](https://www.youtube.com/watch?v=ieearzWTCZw)
+
+However, how do antenna detect phase?
+
+
+The carrier phase measurement?
+
+d=N•Л+Лф
+
+### remote contrller design
+
+Industrial drones typically use 2.4GHz or 900MHz frequencies for control, with some requiring licensed bands for extended range. Consider dual-redundant radio systems for mission-critical applications.
+
+If the drone must be physically connected to fly, 2.4GHz can be avoided.
+
+
+
+
+
+
+## PX4
+
+PX4 Ground Control Station.
+
+PX4 ground control station refers to ground control software (QGroundControl, MAVProxy).
+
+PX4's Publish-Subscribe Mechanism.
+
+PX4 includes a uORB (micro Object Request Broker), which is similar to an event system / publish-subscribe framework.
+
+Different modules (sensors, controllers, mission management) don't call each other directly, but interact through message publishing and subscription.
+
+This is a use case of event-driven framework + circular buffer in flight control systems.
+
+Sensor module → publishes IMU_DATA; Estimator (EKF) → subscribes to IMU_DATA, then publishes STATE_ESTIMATE; Controller → subscribes to STATE_ESTIMATE and RC_INPUT, outputs control signals; Motor driver → subscribes to CONTROL_OUTPUT, drives PWM.
+
+MAVLink.
+
+MAVLink is like the "language" between drones and ground control stations, responsible for information transmission, command delivery, and status synchronization. Mastering MAVLink allows you to independently develop ground control software or drone control programs.
+
+PX4 SITL.
+
+SITL (Software-in-the-Loop) is a simulation technique where the actual flight control software runs on your computer, but instead of controlling real hardware, it interfaces with a physics simulator.
+
+
+## ask
+
+why drone's battery has a output rate term?
+
+
+
+
+
