@@ -63,6 +63,12 @@ published : true
   
 20. "I wish to speak to my attorney".
 
+21. The issue that orcs just don't have mental capacity to come up with desent designs, and the only skill they have is to swing bats over their heads, shout loudly, get drunk, rape. steal, kill, etc...
+
+22. The cathode ray experienced a slight **deflection** when passing through the magnetic field.  
+	- 阴极射线在穿过磁场时发生了轻微的偏转。  
+
+23. ROS 2 enables a very deep integration with PX4, to the extent that you can create flight modes in ROS 2 that are indistinguisable from internal PX4 modes.
 
 
 

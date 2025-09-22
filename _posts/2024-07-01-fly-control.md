@@ -359,6 +359,14 @@ PX4 SITL.
 SITL (Software-in-the-Loop) is a simulation technique where the actual flight control software runs on your computer, but instead of controlling real hardware, it interfaces with a physics simulator.
 
 
+
+
+
+
+
+
+
+
 ## ask
 
 why drone's battery has a output rate term?
@@ -367,3 +375,34 @@ why drone's battery has a output rate term?
 
 
 
+### Distance sensor
+
+Distance sensors provide distance measurement that can be used for terrain following, terrain holding (i.e. precision hovering for photography), improved landing behaviour (conditional range aid), warning of regulatory height limits, collision prevention, etc.
+
+One compatible distance sensor for px4 quadcopter is ARK Flow.
+
+ARK Flow is an open source DroneCAN optical flow, distance sensor, and IMU module.
+
+
+
+### pixhawk fmu differences in short
+
+Just listed at 2025.
+
+1. **FMUv2 version**: Cortex-M4 core, 1 MB memory, with co-processor  
+2. **FMUv3 version**: Cortex-M4 core, 2 MB memory, with co-processor  
+3. **FMUv4 version**: Cortex-M4 core, 2 MB memory, without co-processor  
+4. **FMUv4 Pro version**: Cortex-M4 core, 2 MB memory, with co-processor  
+5. **FMUv5 version**: Cortex-M7 core, 2 MB memory, with co-processor  
+6. **FMUv5x version**: Cortex-M7 core, 2 MB memory, with co-processor  
+7. **FMUv6x version**: Cortex-M7 core, 2 MB memory, with co-processor  
+
+### pixhawk open-source pcb designs 
+
+Pixhawk has fmu2&fmu1 pcb opened source. Others just have pin-out.
+
+### embed ros2 & px4
+
+Using linux to do this.
+
+Communication between ROS 2 and PX4 uses middleware that implements the XRCE-DDS protocol. This middleware exposes PX4 uORB messages as ROS 2 messages and types, effectively allowing direct access to PX4 from ROS 2 workflows and nodes. The middleware uses uORB message definitions to generate code to serialise and deserialise the messages heading in and out of PX4. These same message definitions are used in ROS 2 applications to allow the messages to be interpreted.
