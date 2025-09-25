@@ -70,6 +70,8 @@ published : true
 
 23. ROS 2 enables a very deep integration with PX4, to the extent that you can create flight modes in ROS 2 that are indistinguisable from internal PX4 modes.
 
+24. However the increased complexity versus a Quadcopter makes them more failure prone.
+
 
 
 

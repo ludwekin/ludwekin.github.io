@@ -2,6 +2,8 @@
 
 title : "Allwinner H618"
 
+published : false
+
 ---
 
 

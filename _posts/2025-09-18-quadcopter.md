@@ -67,3 +67,43 @@ However, I find one that is very suitbale for 3D print.
 [Aether](https://makerworld.com.cn/zh/models/427062-bm-yi-tai-4-4-ying-cun-yi-ti-shi-fpv-wu-ren-ji-ji?from=search#profileId-339009). This one is designed as a whole which is brain-new. In case that the link gets invaild, you can download from my [site](/assets/Aether/Aether4.stl). 
 
 By the way, this design is very interesting that I just want to create a new [post](ludwekin.github.io/aether) for it.
+
+
+### back emf
+
+When the magnet rotor of a brushless motor rotates next to the stator coils, according to Faraday’s law of electromagnetic induction, a voltage is induced in the stator coils. This induced voltage is called back electromotive force (back EMF).  
+
+How ESC Detects Back EMF?
+
+
+
+
+
+Modern ESCs (running Field Oriented Control) operate in a “dual-task” mode:
+
+1. **Most of the time**: Actively drive current into the motor windings to generate torque.  
+2. **Extremely short intervals**: Momentarily stop driving one winding and, during this “idle window,” measure the back EMF voltage on that coil.  
+
+This cycle repeats at very high frequency (thousands to tens of thousands of times per second). The ESC’s MCU uses dedicated **ADC hardware** to sample these voltages quickly and accurately.
+
+### From Back EMF to RPM 
+
+1. **Measure period**  
+   - The MCU times the interval between two zero-crossings of the back EMF.  
+   - This interval is the electrical period (T).  
+
+2. **Compute frequency**  
+   - Electrical frequency: `f = 1 / T`  
+
+3. **Convert to RPM**  
+   - With the motor’s pole pair count known, electrical frequency converts to mechanical RPM.  
+   - Formula:  
+     ```
+     RPM = (f * 60) / Pole_Pairs
+     ```  
+   - Explanation:  
+     - Multiply by 60 to convert from revolutions per second to per minute.  
+     - Divide by pole pairs because one mechanical revolution produces multiple electrical cycles (equal to the number of pole pairs).  
+
+
+

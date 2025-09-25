@@ -274,3 +274,14 @@ Coreless_motor also as below.
 | “The Frenet Frame as a Generalization of the Park Transform” | Federico Milano | 2022 | 用微分几何（Frenet frame）扩展 Park 变换，对三相电路和更多相数情况做推广。 [oai_citation:7‡arXiv](https://arxiv.org/abs/2206.09209?utm_source=chatgpt.com) |
 
 ---
+
+
+
+
+### Synthesize a sine wave from square waves
+
+Modern ESCs implement **Space Vector PWM (SVPWM)**, which can be seen as an advanced way of using square waves (switching signals) to approximate a sinusoidal waveform.
+
+
+
+### n52 grade magnets 

@@ -406,3 +406,78 @@ Pixhawk has fmu2&fmu1 pcb opened source. Others just have pin-out.
 Using linux to do this.
 
 Communication between ROS 2 and PX4 uses middleware that implements the XRCE-DDS protocol. This middleware exposes PX4 uORB messages as ROS 2 messages and types, effectively allowing direct access to PX4 from ROS 2 workflows and nodes. The middleware uses uORB message definitions to generate code to serialise and deserialise the messages heading in and out of PX4. These same message definitions are used in ROS 2 applications to allow the messages to be interpreted.
+
+
+
+### remote controller
+
+
+AT9S.
+
+### Tricopter
+
+The Tricopter uses 3 motor / propeller propulsion units with a servo to rotate one of them to compensate for adverse yaw.
+Tricopters were popular early on when the brushless motor / propeller units were new and scarce.
+They suffer from less than stellar performance and do not scale well to larger sizes.
+But they still have some popularity for small, light hobby use applications.
+Because this is primarily an outdated design we will not expand further on it in this article.
+
+
+### px4 and ardupilot
+
+They just has a lot in coomon. Such as marlink.
+
+
+
+
+### Difference Between CAN and DroneCAN
+
+1. CAN (Controller Area Network)
+- **Definition**: A low-level, robust communication protocol originally developed by Bosch (1980s).  
+- **Purpose**: Provides reliable communication between microcontrollers and devices without a host computer.  
+- **Characteristics**:  
+  - Multi-master, message-based protocol.  
+  - Widely used in automotive, industrial, and robotics.  
+  - Defines only the **data link** and **physical layer**.  
+  - Does **not** specify how messages are structured for a particular application.  
+
+---
+
+2. DroneCAN
+- **Definition**: An **open, higher-level protocol** built on top of CAN, designed for UAVs and robotics.  
+- **Origin**: Fork of UAVCAN v0 (after UAVCAN v1 introduced breaking changes).  
+- **Purpose**: Standardizes communication for drone components (ESCs, GPS, sensors, flight controllers).  
+- **Characteristics**:  
+  - Runs over CAN bus.  
+  - Defines **message sets** (e.g., battery status, GPS data, ESC control).  
+  - Plug-and-play: devices auto-discover each other.  
+  - Supported by ArduPilot and PX4.  
+  - Open-source, maintained by the DroneCAN community.  
+
+---
+
+
+
+### RTOS Used by ArduPilot
+
+ArduPilot does **not depend on a single RTOS**. It uses an **abstraction layer (AP_HAL)** to support different operating systems and bare-metal boards.  
+
+1. **ChibiOS**  
+   - Lightweight open-source RTOS.  
+   - Default for STM32-based flight controllers (Pixhawk, Cube, etc.).  
+   - Provides task scheduling, drivers, and hardware abstraction.  
+
+2. **NuttX**  
+   - POSIX-like RTOS (used by PX4).  
+   - Historically supported by ArduPilot, but **less common today**.  
+
+3. **Linux**  
+   - Runs ArduPilot in SITL (Software In The Loop).  
+   - Also used for companion-computer boards (e.g., Raspberry Pi, BeagleBone).  
+
+4. **No RTOS (bare-metal)**  
+   - Early ArduPilot boards ran without RTOS, using cooperative scheduling inside the main loop.  
+   - Still possible on very limited hardware.  
+
+
+   
