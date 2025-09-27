@@ -285,3 +285,21 @@ Modern ESCs implement **Space Vector PWM (SVPWM)**, which can be seen as an adva
 
 
 ### n52 grade magnets 
+
+
+
+
+
+
+### case of simple esc & brushless motor
+
+![image-center](../assets/foc_motor/brushless_motor.png){: .align-center}
+
+this motor at right is a typical brushless motor.
+
+talking about brushless motor, we must talk about esc too.
+
+Personallly I dont know the principle of a esc.
+
+Especially the three small lines.
+
