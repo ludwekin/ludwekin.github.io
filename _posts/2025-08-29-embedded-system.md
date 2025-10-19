@@ -24,9 +24,9 @@ However, embedded pcba makes it facing vibration. Embedded pcba may not have the
 
 Talking about power consumption, embedded pcba do cost less.
 
+### Common PC vs Embedded devices
 
-
-
+Embedded devices are specialized electronic equipment containing computer chips. Unlike general-purpose computers (such as PCs or laptops that can run various software), they are designed for **specific dedicated functions**.
 
 
 

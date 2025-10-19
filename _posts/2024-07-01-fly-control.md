@@ -481,3 +481,10 @@ ArduPilot does **not depend on a single RTOS**. It uses an **abstraction layer (
 
 
    
+### elrs
+
+"ELRS primarily runs on radio frequency (RF) modules based on ESP32 or STM32 series microcontrollers."
+
+The transmitter (remote control) sends a very short control data packet.
+
+After receiving it, the receiver immediately replies with an acknowledgment signal.

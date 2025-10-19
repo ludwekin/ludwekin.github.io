@@ -39,3 +39,37 @@ At first day I just cant help worrying, so at middle break I just come back apar
 
 At first night she is quiet and sticky.
 
+### oem
+
+OEM 的全称是 Original Equipment Manufacturer，中文通常翻译为 “原始设备制造商” 或 “原厂委托制造”。
+
+OEM指的是拥有产品品牌、负责设计和销售，但不直接生产该产品的公司。
+
+### 步进电机
+
+20251009。
+
+收线，用便宜的舵机容易坏。
+
+步进电机要带力反馈。目前选型是300多RMB。
+
+遥控器遥控飞机落下的同时直接收线，所以需要力反馈。
+
+### 系留线
+
+原品三根线。我们在设计的时候还是考虑四根线。
+
+测试原品飞机最大功率200w。
+
+### LED
+
+方案难确定。
+
+### 电源
+
+箱子的电路板，飞机上的电源，都要自己打板。
+
+### 飞机侧的集成
+
+最好集成到一块板子？？？
+

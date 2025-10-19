@@ -87,3 +87,7 @@ Programs are divided into two main categories: **kernel space** and **user space
    - `socket()`, `bind()`, `listen()`, `accept()`, `connect()`
 
 
+### kernal
+
+linux distribution like Ubuntu don't have kenal codes.
+

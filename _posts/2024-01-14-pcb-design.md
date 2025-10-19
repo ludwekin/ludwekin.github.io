@@ -152,3 +152,18 @@ By the way, why are IC pins called "lead"?
 Lead (the metal, Pb) was one of the most common materials in early electrical wiring, solder, and piping.  
 
 Many early electronic components (resistors, capacitors, vacuum tubes) used lead-based alloys (e.g., copper with tin-lead plating) for their external metal legs. As a result, these metal “legs” were naturally called **leads**.  
+
+
+
+
+### high speed pcb
+
+What's funny is that we can make our ownself pc.
+
+This idea is fisrtly heard by a video of making science queadcopter.the copter must have a pc carried to achived advanced function, thus we can make customeed pc.
+
+To minimalize a pc, we may got bga200 memmory particles。emmc for storage or 2242 as m.2. And we don't need south bridge, just cpu-to-pcie. Pcie-to-mxm can be expened to additional grafic card computing.
+
+The problem is that the high speed pcb is expensive lol.
+
+

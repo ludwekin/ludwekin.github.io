@@ -14,6 +14,8 @@ Let's talk about "f450" first.
 
 What is the F450?
 
+FlameWheel 450 is f450.
+
 The F450 is a quadcopter frame kit, originally manufactured by DJI. It's a relatively simple, affordable, and well-documented platform that has become a standard for learning drone development and flight controller programming.
 
 The number "450" refers to the diagonal motor-to-motor distance in millimeters. This is a standard naming convention in the multirotor community:
@@ -105,5 +107,23 @@ This cycle repeats at very high frequency (thousands to tens of thousands of tim
      - Multiply by 60 to convert from revolutions per second to per minute.  
      - Divide by pole pairs because one mechanical revolution produces multiple electrical cycles (equal to the number of pole pairs).  
 
+
+### reciver, fpv glasses
+
+What's rk5808? Can a fpv simulate glassed be made by myself?
+
+
+### elrs & 2.4g
+
+What fuck? elrs is lora technology.
+
+
+
+
+### rough flight f103
+
+This link is a video to fly with a stm32.
+
+[f450-f103](https://www.bilibili.com/video/BV1Us4y1U7H1/?spm_id_from=333.1387.homepage.video_card.click&vd_source=bdb655fa0a3eb3c043d2c9524d6aa41d)
 
 
