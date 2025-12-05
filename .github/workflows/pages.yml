@@ -13,7 +13,8 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           # If your repository depends on submodule, please see: https://github.com/actions/checkout
-          submodules: recursive
+          # submodules: recursive
+          submodules: false ## 为了用一个二次元的主题，然后报错，提示我改写这个
       - name: Use Node.js 20
         uses: actions/setup-node@v4
         with:
