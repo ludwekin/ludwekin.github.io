@@ -14,8 +14,8 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 # url: http://example.com
-url: https://ludwekin-github-io.vercel.app
-# url: https://ludwekin.github.io # 主题没渲染出来，让我改这里
+# url: https://ludwekin-github-io.vercel.app
+url: https://ludwekin.github.io # 主题没渲染出来，让我改这里
 
 permalink: :year/:month/:day/:title/
 permalink_defaults:
