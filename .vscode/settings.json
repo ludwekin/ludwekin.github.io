@@ -1,3 +1,7 @@
-{
-    "hexo.assetFolderType": "global"
-}
+"MarkdownPaste.imageRules": [
+  {
+    "match": ".*", 
+    "targetPath": "${workspaceFolder}/source/images",
+    "linkPattern": "![](/images/${imageFileName})"
+  }
+]
