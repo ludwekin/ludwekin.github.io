@@ -44,7 +44,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true # 我发现加载不出图片，GPT让我改这里。
 relative_link: false
 future: true
 # syntax_highlighter: highlight.js
