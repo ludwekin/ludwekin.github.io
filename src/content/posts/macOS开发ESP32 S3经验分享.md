@@ -1,7 +1,11 @@
 ---
 title: macOS开发ESP32 S3经验分享
-date: 2025-12-07T16:30:28+08:00
 tags:
+    - ESP32
+    - "macOS "
+published: 2025-12-04T12:36:26.000Z
+date: 2025-12-02T16:00:00.000Z
+category: ESP32
 ---
 
 简单来说，怎么做？

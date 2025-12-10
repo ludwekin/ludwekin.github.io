@@ -1,7 +1,11 @@
 ---
 title: Cloudflare配置帮助手册
-date: 2025-12-07T17:48:42+08:00
+date: 2025-12-12T09:48:42.000Z
 tags:
+    - Web
+category: Web
+published: 2025-12-09T12:38:19.000Z
+slug: cloudflare配置帮助手册
 ---
 
 问题1: 用Cloudflare管理域名的时候，会发现有个橙色的选项，它打开不打开的区别？
