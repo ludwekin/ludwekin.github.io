@@ -63,5 +63,12 @@
         }
       ]
     }
-  ]
+  ],
+  "frontMatter.content.snippets": {
+    "是开裆裤": {
+      "description": "阿斯顿",
+      "body": "啊实打实的",
+      "isMediaSnippet": true
+    }
+  }
 }
