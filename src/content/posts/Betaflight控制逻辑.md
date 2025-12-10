@@ -6,6 +6,7 @@ tags:
 image: preview_photos/betaflight.png
 category: 四旋翼
 slug: betaflight控制逻辑
+published: 2025-12-10T13:06:51.016Z
 ---
 
 为什么 Betaflight 不用双环？
