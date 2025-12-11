@@ -75,5 +75,6 @@
       "body": "啊实打实的",
       "isMediaSnippet": true
     }
-  }
+  },
+  "frontMatter.dashboard.openOnStart": false
 }
