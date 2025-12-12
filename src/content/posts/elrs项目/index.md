@@ -17,3 +17,9 @@ ESP8266 对 SX1281 的每一次操作都是 SPI 指令。
 四，触发发射，spiWrite({0x83, 0x00, 0x00})。
 
 探索SX1281的工作。
+
+ELRS 将不同 RF 芯片（如 SX127x、SX1280、LR1121）封装成统一驱动接口；利用 HAL 封装不同频段、电源管理与调制特性。这让 ELRS 可以跨多种无线芯片实现统一软件栈。不难理解。
+
+ELRS的遥测处理。
+
+Telemetry System将不同来源数据（MAVLink、GPS、HoTT、内置传感器）统一转换为 CRSF Frame。
