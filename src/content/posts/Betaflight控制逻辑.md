@@ -17,3 +17,6 @@ Betaflight的Dynamic Notch 在做什么？
 
 实时测 RPM ，根据转速计算电机噪声频率。然后把 notch 滤波器中心频率移动到当前噪声上。
 
+Betaflight项目的Makefile作用。
+
+Makefile 文件是用于自动化 Betaflight 固件构建过程的。它定义了如何编译源代码、链接目标文件以及生成最终的固件文件（.hex 或 .bin）。

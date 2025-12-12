@@ -14,3 +14,6 @@ ELRS 使用 SPI 总线 和 SX1281 芯片通信。
 
 见“UAV遥控器设计.md”。
 
+LoRa 是如何调制的？LoRa 是 Chirp Spread Spectrum (CSS)。
+
+
