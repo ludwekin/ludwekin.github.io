@@ -1,5 +1,5 @@
 ---
-title: Betaflight控制逻辑
+title: Betaflight,代码逻辑详解
 date: 2025-12-08T19:14:42+08:00
 tags:
     - 飞控
@@ -20,3 +20,6 @@ Betaflight的Dynamic Notch 在做什么？
 Betaflight项目的Makefile作用。
 
 Makefile 文件是用于自动化 Betaflight 固件构建过程的。它定义了如何编译源代码、链接目标文件以及生成最终的固件文件（.hex 或 .bin）。
+
+src/main/sensors/gyro.c。
+
