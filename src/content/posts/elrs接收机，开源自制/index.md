@@ -35,5 +35,9 @@ ESP8266EX 的定位是通信 SoC（Wi-Fi SoC）。
 
 它设计时假设固件体积会较大。于是 Espressif 做了这个决定-不在芯片内集成 Flash。
 
+CRSF 协议连接遥控手柄与 ELRS 发射模块。
+
+
+
 
 
