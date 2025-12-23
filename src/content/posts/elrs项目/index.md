@@ -28,3 +28,10 @@ ELRS supports both 900MHz and 2.4GHz frequency bands with packet rates up to 100
 
 为什么 ELRS 要自己做 Parameter System？
 
+2025年elrs彻底支持mavlink，这代表了什么？
+
+接收机直接输出原生MAVLink到飞控。ELRS 3.5+版本实现了单链路集成RC控制 + 双向完整MAVLink遥测。
+
+MAVSDK 的仓库中有一个 Git 子模块（submodule）叫做 proto。
+
+
