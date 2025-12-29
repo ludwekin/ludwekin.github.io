@@ -1126,9 +1126,48 @@ solvePnP 根据 四个角点的像素位置 + 相机内参 计算 3D 位姿。
 
 
 
+source /opt/ros/humble/setup.bash
+ros2 run ros_gz_bridge parameter_bridge \
+    "/world/precision_landing/model/x500_mono_cam_down_0/link/camera_link/sensor/camera/image@sensor_msgs/msg/Image[gz.msgs.Image" \
+    "/world/precision_landing/model/x500_mono_cam_down_0/link/camera_link/sensor/camera/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo"
 
 
 
+# 启动 Micro XRCE-DDS Agent（通过串口连接飞控）
+ros2 launch circle_pilot_bringup micro_xrce_agent.launch.py \
+    transport:=serial \
+    serial_port:="/dev/ttyUSB0"  # 请根据您的串口设备调整此路径
+
+
+
+## 飞控和RK3588串口通讯部分
+
+
+飞控和RK3588串口通讯。
+
+dmesg | grep tty。
+
+插拔串口线，看哪个 tty 在变化。
+
+对了，要自己选好开发板上你要的那组串口，要手动开启的。
+
+波特率115200。
+
+我插到了飞控的tele1。
+
+mavlink status 。
+
+UXRCE_DDS_CFG。
+
+MAV_1_CONFIG。
+
+
+ros2 topic list。
+
+输出的是 PX4 通过 uXRCE-DDS 桥接过来的所有 uORB 话题。
+
+
+v4l2-ctl --all。
 
 
 
