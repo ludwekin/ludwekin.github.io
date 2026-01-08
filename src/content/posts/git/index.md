@@ -19,3 +19,6 @@ From ssh://git.circleai.tech:8222/drone/circle_pilot
 Already up to date.
 orangepi@orangepi5max:~/ws/src/circle_pilot$ 理解???
 
+
+git push origin --delete feature/stable_fly.
+
