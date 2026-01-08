@@ -1,5 +1,5 @@
 ---
-title: aruco
+title: aruco & apirl tag
 published: 2025-12-22T09:41:35.315Z
 ---
 
@@ -39,4 +39,8 @@ corners[i]：图像中标记的四个角的像素坐标。
 camera_matrix 和 dist_coeffs：相机内参和畸变系数。
 
 flags=cv2.SOLVEPNP_IPPE_SQUARE：使用 IPPE 算法专门求方形平面标记的位姿，稳定且精度高。  
+
+
+AprilTag被NASA采用.
+
 

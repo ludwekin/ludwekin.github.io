@@ -63,3 +63,5 @@ circle_pilot_takeoff_and_land/src/target_based_takeoff.cpp - 起飞模式实现
 配置文件：
 target_based_takeoff.yaml（默认在 ~/.circle_pilot/config/ 目录，或使用 takeoff_config_file 参数指定）
 核心起飞逻辑在 target_based_takeoff_executor.hpp 和 target_based_takeoff.cpp 中实现。
+
+ros-humble-ros-gz-bridge。
