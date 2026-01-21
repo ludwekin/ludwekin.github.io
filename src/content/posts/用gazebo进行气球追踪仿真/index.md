@@ -923,3 +923,16 @@ vim box_world.sdf.
 ## 重要事项
 
 1. ApplyLinkWrench is a world-level plugin — it must be placed directly under <world>, not inside a <model>.
+
+
+## gazebo常用命令及解释
+
+1. ign gazebo -v 4 dji_m350.sdf -s.
+
+  对于我的fortress，记住，只能用这个ign gazebo。
+
+  这句话不开gui，调试sdf。
+
+2. ign gazebo -v 4 djim350.sdf.
+
+  开始仿真。
