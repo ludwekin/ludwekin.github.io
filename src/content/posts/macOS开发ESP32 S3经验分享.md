@@ -65,6 +65,13 @@ OpenOCD 会在 端口 3333 启动 GDB server。用 VSCode / PlatformIO / Eclipse
 用JTAG也可以烧录程序，在我的例子里面，需要在 VS CODE 的这个项目的settings.json里面保证以下代码："idf.monitorPort": "/dev/tty.usbmodem101"和"idf.flashType": "JTAG"。
 
 
+## with freertos
+
+1. 任务之间怎么交流？一般是queue。
+
+    vTaskDelay(100);
+
+2. 
 
 
 
